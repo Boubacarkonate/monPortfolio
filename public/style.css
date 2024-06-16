@@ -107,18 +107,20 @@ footer a{
 
 
 /*MEDIAS QUERIES */
-
-
-@media (max-width: 376px) { 
-    nav{
+@media (max-width: 768px) {   
+    section .card{
+        width: 100%;
+    } 
+    section .formations{
         flex-direction: column;
-    }
-    nav ul{
-        display: none;
-    }
+} 
+}
+
+/* @media (max-width: 376px) { 
+
     section .formations{
         flex-direction: column;
     
     }
- }
+ } */
 
