@@ -54,6 +54,8 @@ header a:hover{
 
 header img{
     width: 5%;
+    border-radius: 50%;
+    padding-right: 1%;
 }
 header .title{
     display: flex;
