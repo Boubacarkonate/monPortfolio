@@ -89,7 +89,11 @@ section ul{
     padding-left: 0;
 }
 
-section .projet{
+section .projects{
+    filter: grayscale(100%);
+}
+
+section .btnProjet{
     text-align: center;
 }
 
