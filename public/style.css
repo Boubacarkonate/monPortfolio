@@ -88,16 +88,16 @@ section ul{
     padding-left: 0;
 }
 
+section .projet{
+    text-align: center;
+}
+
 section .formations{
     display: flex;
     align-items: center;
     justify-content: space-around;
 
 }
-
-/* section .certifications p{
-    font-family: 'roboto', arial, helvetica, sans-serif;
-} */
 
 footer ul{
     display: flex;
