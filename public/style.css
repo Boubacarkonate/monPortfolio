@@ -48,7 +48,7 @@ a:hover {
 
 a::after {
     content: "";
-    display:block;
+    display: block;
     width: 100%;
     height: 3px;
     background: #007bff;
@@ -113,7 +113,7 @@ header h2 {
 }
 
 .btn-container li {
-    padding-right: 1% ;
+    padding-right: 1%;
 }
 
 .btn-container a {
@@ -127,12 +127,10 @@ main {
 }
 
 section {
-    /* padding: 20px; */
     border-radius: 8px;
     background-color: var(--section-background-color);
     color: var(--section-text-color);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* border: 1px solid rgba(255, 255, 255, 0.1); */
 }
 
 .competences {
@@ -144,7 +142,7 @@ section {
     padding-right: 2%;
 }
 
-.competences li{
+.competences li {
     display: flex;
     align-items: center;
     padding-bottom: 10%;
@@ -158,9 +156,6 @@ section {
 .skills li {
     padding-bottom: 10%;
 }
-
-
-
 
 .projects-container {
     display: grid;
@@ -237,7 +232,6 @@ footer {
 
 footer ul {
     display: flex;
-    /* justify-content: center; */
     list-style: none;
     margin-top: 20px;
 }
@@ -246,6 +240,7 @@ footer ul li {
     margin: 0 10px;
 }
 
+/* Media Queries */
 @media (max-width: 1200px) {
     main {
         padding: 4% 10%;
@@ -278,10 +273,6 @@ footer ul li {
     main {
         padding: 4% 10%;
     }
-
-    footer {
-        padding: 4% 10%;
-    }
 }
 
 @media (max-width: 768px) {
@@ -298,8 +289,7 @@ footer ul li {
         align-items: flex-start;
     }
 
-    .certifications,
-    .cv {
+    .certifications, .cv {
         margin-top: 20px;
     }
 
@@ -312,6 +302,46 @@ footer ul li {
     header img {
         width: 60px;
         height: 60px;
+    }
+
+    main {
+        padding: 4% 5%;
+        gap: 50px; /* Réduire l'espacement entre les sections pour les écrans plus petits */
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr; /* Afficher les projets en une seule colonne */
+        gap: 15px; /* Réduire l'espacement entre les cartes de projet */
+    }
+
+    .card {
+        margin-bottom: 20px; /* Ajouter un espacement inférieur entre les cartes */
+    }
+
+    section .competences {
+        flex-direction: column;
+    }
+
+    .competences div {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 4% 5%;
+    }
+
+    header {
+        padding: 4% 5%;
+    }
+
+    footer {
+        padding: 4% 5%;
     }
 }
 
