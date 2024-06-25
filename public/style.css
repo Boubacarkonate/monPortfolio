@@ -104,6 +104,12 @@ header h2 {
     margin-bottom: 1%;
 }
 
+.btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .btn-container {
     margin-top: 2%;
 }
@@ -118,6 +124,11 @@ header h2 {
 
 .btn-container a {
     padding-right: 1%;
+}
+
+.text-bold {
+    font-weight: bold;
+        color: var(--secondary-color);
 }
 
 main {
