@@ -156,7 +156,9 @@
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        once: true  // Animation se produit une seule fois
+    });
     </script>
     <script src="public/index.js"></script>
 </body>

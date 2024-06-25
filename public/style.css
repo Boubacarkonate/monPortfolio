@@ -317,11 +317,6 @@ footer ul li {
         margin-bottom: 20px; /* Ajouter un espacement inférieur entre les cartes */
     }
 
-    section .competences {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .competences div {
         margin-bottom: 20px;
     }
@@ -330,6 +325,14 @@ footer ul li {
 @media (max-width: 480px) {
     nav, header {
         padding: 4% 8%;
+    }
+
+    .competences {
+        flex-direction: column;
+    }
+
+    .competences li {
+        padding-bottom: 0%;
     }
 
     footer {
