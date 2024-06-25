@@ -123,7 +123,7 @@ header h2 {
 main {
     padding: 4% 15%;
     display: grid;
-    gap: 150px; /* Espacement entre les sections */
+    gap: 80px; /* Espacement entre les sections */
 }
 
 section {
@@ -242,7 +242,7 @@ footer ul li {
 
 /* Media Queries */
 @media (max-width: 1200px) {
-    main {
+    nav, header, main, footer {
         padding: 4% 10%;
     }
 
@@ -252,10 +252,8 @@ footer ul li {
 }
 
 @media (max-width: 992px) {
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 4% 10%;
+    nav, header, main, footer {
+        padding: 4% 8%;
     }
 
     nav ul {
@@ -266,22 +264,15 @@ footer ul li {
         margin-left: 0;
     }
 
-    header {
-        padding: 4% 10%;
-    }
-
-    main {
-        padding: 4% 10%;
+    .projects-container {
+        grid-template-columns: 1fr; /* Afficher les projets en une seule colonne */
+        gap: 50px; /* Espacement entre les projets */
     }
 }
 
 @media (max-width: 768px) {
     nav ul {
         display: none; /* Masquer le menu de navigation */
-    }
-
-    section {
-        padding: 15px;
     }
 
     .formations {
@@ -292,13 +283,17 @@ footer ul li {
     .certifications, .cv {
         margin-top: 20px;
     }
-
-    footer {
-        padding: 4% 10%;
-    }
 }
 
 @media (max-width: 576px) {
+    nav, header {
+        padding: 4% 8%;
+    }
+
+    main, footer {
+        padding: 4% 5%;
+    }
+
     header img {
         width: 60px;
         height: 60px;
@@ -324,6 +319,7 @@ footer ul li {
 
     section .competences {
         flex-direction: column;
+        align-items: center;
     }
 
     .competences div {
@@ -332,12 +328,8 @@ footer ul li {
 }
 
 @media (max-width: 480px) {
-    nav {
-        padding: 4% 5%;
-    }
-
-    header {
-        padding: 4% 5%;
+    nav, header {
+        padding: 4% 8%;
     }
 
     footer {
