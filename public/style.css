@@ -102,6 +102,7 @@ header .title {
 
 header h2 {
     margin-bottom: 1%;
+    /* font-style: italic; */
 }
 
 .btn {
