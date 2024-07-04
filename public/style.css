@@ -100,9 +100,12 @@ header .title {
     align-items: center;
 }
 
+header .title h2 {
+    font-size: 2em;
+}
+
 header h2 {
     margin-bottom: 1%;
-    /* font-style: italic; */
 }
 
 .btn {
