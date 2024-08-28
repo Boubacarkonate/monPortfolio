@@ -22,12 +22,14 @@ body {
     margin-top: 5%;
     background-color: var(--background-color);
     color: var(--text-color);
-    overflow-x: hidden; 
+    overflow-x: hidden;
     display: grid;
-    min-height: 100vh; 
+    min-height: 100vh;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: "Playfair Display", serif;
     color: var(--text-color);
 }
@@ -132,13 +134,14 @@ header h2 {
 
 .text-bold {
     font-weight: bold;
-        color: var(--secondary-color);
+    color: var(--secondary-color);
 }
 
 main {
     padding: 4% 15%;
     display: grid;
-    gap: 80px; /* Espacement entre les sections */
+    gap: 80px;
+    /* Espacement entre les sections */
 }
 
 section {
@@ -174,8 +177,8 @@ section {
 
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
 }
 
 .card {
@@ -200,17 +203,19 @@ section {
 .card-text {
     margin-top: 5%;
     margin-bottom: 5%;
+    line-height: 150%;
 }
 
 .btnProjet {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 2px 5px;
     background-color: var(--primary-color);
     color: var(--section-background-color);
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    text-decoration: none; /* Ajout de la propriété de décoration de texte */
+    text-decoration: none;
+    /* Ajout de la propriété de décoration de texte */
 }
 
 .btnProjet:hover {
@@ -257,7 +262,11 @@ footer ul li {
 
 /* Media Queries */
 @media (max-width: 1200px) {
-    nav, header, main, footer {
+
+    nav,
+    header,
+    main,
+    footer {
         padding: 4% 10%;
     }
 
@@ -267,7 +276,11 @@ footer ul li {
 }
 
 @media (max-width: 992px) {
-    nav, header, main, footer {
+
+    nav,
+    header,
+    main,
+    footer {
         padding: 4% 8%;
     }
 
@@ -280,14 +293,17 @@ footer ul li {
     }
 
     .projects-container {
-        grid-template-columns: 1fr; /* Afficher les projets en une seule colonne */
-        gap: 50px; /* Espacement entre les projets */
+        grid-template-columns: 1fr;
+        /* Afficher les projets en une seule colonne */
+        gap: 50px;
+        /* Espacement entre les projets */
     }
 }
 
 @media (max-width: 768px) {
     nav ul {
-        display: none; /* Masquer le menu de navigation */
+        display: none;
+        /* Masquer le menu de navigation */
     }
 
     .formations {
@@ -295,17 +311,21 @@ footer ul li {
         align-items: flex-start;
     }
 
-    .certifications, .cv {
+    .certifications,
+    .cv {
         margin-top: 20px;
     }
 }
 
 @media (max-width: 576px) {
-    nav, header {
+
+    nav,
+    header {
         padding: 4% 8%;
     }
 
-    main, footer {
+    main,
+    footer {
         padding: 4% 5%;
     }
 
@@ -316,7 +336,8 @@ footer ul li {
 
     main {
         padding: 4% 5%;
-        gap: 50px; /* Réduire l'espacement entre les sections pour les écrans plus petits */
+        gap: 50px;
+        /* Réduire l'espacement entre les sections pour les écrans plus petits */
     }
 
     section {
@@ -324,12 +345,15 @@ footer ul li {
     }
 
     .projects-container {
-        grid-template-columns: 1fr; /* Afficher les projets en une seule colonne */
-        gap: 15px; /* Réduire l'espacement entre les cartes de projet */
+        grid-template-columns: 1fr;
+        /* Afficher les projets en une seule colonne */
+        gap: 15px;
+        /* Réduire l'espacement entre les cartes de projet */
     }
 
     .card {
-        margin-bottom: 20px; /* Ajouter un espacement inférieur entre les cartes */
+        margin-bottom: 20px;
+        /* Ajouter un espacement inférieur entre les cartes */
     }
 
     .competences div {
@@ -338,7 +362,9 @@ footer ul li {
 }
 
 @media (max-width: 480px) {
-    nav, header {
+
+    nav,
+    header {
         padding: 4% 8%;
     }
 
