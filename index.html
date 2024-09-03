@@ -21,21 +21,26 @@
             Bouba
         </h1>
         <ul>
-            <li><a href="#competences">Compétences</a></li>
-            <li><a href="#projets">Projets</a></li>
-            <li><a href="#formations">Formations</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#competences" id="nav-skills">Compétences</a></li>
+            <li><a href="#projets" id="nav-projects">Projets</a></li>
+            <li><a href="#formations" id="nav-education">Formations</a></li>
+            <li><a href="#contact" id="nav-contact">Contact</a></li>
         </ul>
+        <div class="language-switch">
+            <button id="fr-btn" class="btnProjetLang">FR</button>
+            <button id="en-btn" class="btnProjetLang">EN</button>
+        </div>
     </nav>
     <header>
         <div class="title">
             <img src="public/media/profile.png" alt="profile-photo">
             <h2>Boubacar Konaté</h2>
         </div>
-        <h2>Développeur web</h2>
-        <p>Après une carrière en éducation spécialisée, j'ai embrassé le développement web mobile pour continuer à aider
+        <h2 id="header-subtitle">Développeur web</h2>
+        <p id="header-description">Après une carrière en éducation spécialisée, j'ai embrassé le développement web
+            mobile pour continuer à aider
             les autres à travers des solutions technologiques innovantes.
-            Je transfère mes soft skills dans cette nouvelle aventure.</p>
+            Je transfère mes softs skills dans cette nouvelle aventure.</p>
         <div class="btn-container">
             <ul>
                 <li class="btn"><a href="https://github.com/Boubacarkonate" target="blank">Github</a></li>
@@ -49,18 +54,18 @@
     <main>
         <div data-aos="fade-up" id="competences">
             <section>
-                <h2>Compétences techniques</h2>
+                <h2 id="competences-title">Compétences techniques</h2>
                 <div class="competences">
                     <div>
                         <ul>
-                            <li class="skills">Design</li>
+                            <li class="skills skills-design">Design</li>
                             <li><img src="public/media/icons/icons8-figma-16.svg" alt="figma">Figma</li>
                             <li><img src="public/media/icons/icons8-adobe-xd-16.svg" alt="adobeXd">AdobeXD</li>
                         </ul>
                     </div>
                     <div>
                         <ul>
-                            <li class="skills">Technologies</li>
+                            <li class="skills skills-technologies">Technologies</li>
                             <li><img src="public/media/icons/icons8-react.svg" alt="reactNative">React</li>
                             <li><img src="public/media/icons/icons8-nodejs-16.svg" alt="node">NodeJS</li>
                             <li><img src="public/media/icons/icons8-php-16.svg" alt="php">PHP</li>
@@ -79,7 +84,7 @@
                     </div>
                     <div>
                         <ul>
-                            <li class="skills">Autres</li>
+                            <li class="skills skills-others">Autres</li>
                             <li><img src="public/media/icons/icons8-github-16.svg" alt="github">Github</li>
                             <li><img src="public/media/icons/icons8-merise-16.png" alt="github">Merise</li>
                             <li><img src="public/media/icons/icons8-uml-16.png" alt="github">UML</li>
@@ -91,13 +96,13 @@
 
         <div data-aos="fade-up" id="projets">
             <section>
-                <h2>Quelques projets réalisés</h2>
+                <h2 id="projects-title">Quelques projets réalisés</h2>
                 <div class="projects-container">
                     <div class="card">
                         <img src="public/media/projects/etalent.png" class="card-img-top projects" alt="projet etalent">
                         <div class="card-body">
                             <h3 class="card-title">e-talent</h3>
-                            <p class="card-text">
+                            <p class="card-text project-etalent-description">
                                 Développé avec le framework <span class="text-bold">Symfony</span> et la base
                                 de données <span class="text-bold">MySQL</span>, ce site e-commerce adopte le pattern
                                 <span class="text-bold">Model-View-Controller</span> pour assurer une architecture
@@ -106,9 +111,9 @@
                             </p>
 
                             <div class="btn">
-                                <a href="maintenance.html" target="_blank" class="btnProjet">Voir le projet</a>
+                                <a href="maintenance.html" target="_blank" class="btnProjet">Project</a>
                                 <a href="https://github.com/Boubacarkonate/etalentsocial.git" target="_blank"
-                                    class="btnProjet">Voir le code</a>
+                                    class="btnProjet">Code</a>
                             </div>
                         </div>
                     </div>
@@ -116,7 +121,7 @@
                         <img src="public/media/projects/toDoList.png" class="card-img-top projects" alt="projet adei">
                         <div class="card-body">
                             <h3 class="card-title">ToDoList</h3>
-                            <p class="card-text">
+                            <p class="card-text project-todolist-description">
                                 Application web responsive de gestion de tâches, développée avec le framework <span
                                     class="text-bold">React</span> et le framework CSS <span
                                     class="text-bold">Bootstrap</span> et la base de données
@@ -129,9 +134,9 @@
 
                             <div class="btn">
                                 <a href="https://boubacarkonate.github.io/toDoList/" target="_blank"
-                                    class="btnProjet">Voir le projet</a>
+                                    class="btnProjet">Project</a>
                                 <a href="https://github.com/Boubacarkonate/toDoList.git" target="_blank"
-                                    class="btnProjet">Voir le code</a>
+                                    class="btnProjet">Code</a>
                             </div>
                         </div>
                     </div>
@@ -139,7 +144,7 @@
                         <img src="public/media/projects/weCare.png" class="card-img-top projects" alt="projet wecare">
                         <div class="card-body">
                             <h3 class="card-title">WeCare</h3>
-                            <p class="card-text">
+                            <p class="card-text project-wecare-description">
                                 Application mobile facilitant la communication entre les institutions médico-sociales et
                                 les familles, développée en <span class="text-bold">React Native</span> et <span
                                     class="text-bold">Firebase</span>. Cette application intègre le pattern <span
@@ -148,10 +153,9 @@
                             </p>
                             <div class="btn">
                                 <a href="#" target="_blank" class="btnProjet"
-                                    style="pointer-events: none; cursor: default; filter: grayscale(80%);">Voir le
-                                    projet</a>
+                                    style="pointer-events: none; cursor: default; filter: grayscale(80%);">Project</a>
                                 <a href="https://github.com/Boubacarkonate/weCare-project.git" target="_blank"
-                                    class="btnProjet">Voir le code</a>
+                                    class="btnProjet">Code</a>
                             </div>
                         </div>
                     </div>
@@ -160,7 +164,7 @@
                             alt="projet wecare">
                         <div class="card-body">
                             <h3 class="card-title">Talent Match</h3>
-                            <p class="card-text">
+                            <p class="card-text project-talentMatch-description">
                                 Cette application web aide à identifier les talents du digital via un questionnaire
                                 détaillé. Développée avec le framework <span class="text-bold">React</span>, elle
                                 intègre l'<span class="text-bold">API REST</span> "apiTalentMatch" pour une recherche
@@ -168,11 +172,10 @@
                                 provider <span class="text-bold">useContext</span>.
                             </p>
                             <div class="btn">
-                                <a href="https://talent-match-one.vercel.app/" target="_blank" class="btnProjet">Voir le
-                                    projet</a>
+                                <a href="https://talent-match-one.vercel.app/" target="_blank"
+                                    class="btnProjet">Project</a>
                                 <a href="https://github.com/Boubacarkonate/talentMatch.git" target="_blank"
-                                    class="btnProjet">Voir le
-                                    code</a>
+                                    class="btnProjet">Code</a>
                             </div>
                         </div>
                     </div>
@@ -180,7 +183,7 @@
                         <img src="public/media/projects/apiRest.png" class="card-img-top projects" alt="projet wecare">
                         <div class="card-body">
                             <h3 class="card-title">API REST</h3>
-                            <p class="card-text">
+                            <p class="card-text project-apiRest-description">
                                 API REST développée en<span class="text-bold"> Node.js et Express.js</span>, conçue pour
                                 le bon fonctionnement de l'application <span class="text-bold">Talent Match</span>.
                                 Cette API répond à des requêtes GET pour
@@ -188,10 +191,9 @@
                                 utilisé pour la recherche de talents.
                             </p>
                             <div class="btn">
-                                <a href="https://api-rest.up.railway.app/" target="_blank" class="btnProjet">Voir le
-                                    projet</a>
+                                <a href="https://api-rest.up.railway.app/" target="_blank" class="btnProjet">Project</a>
                                 <a href="https://github.com/Boubacarkonate/apiRestTalentMatch.git" target="_blank"
-                                    class="btnProjet">Voir le code</a>
+                                    class="btnProjet">Code</a>
                             </div>
                         </div>
                     </div>
@@ -199,7 +201,7 @@
                         <img src="public/media/projects/adei.jpg" class="card-img-top projects" alt="projet wecare">
                         <div class="card-body">
                             <h3 class="card-title">adei-france</h3>
-                            <p class="card-text">
+                            <p class="card-text project-adei-description">
                                 Projet dédié à la fourniture de services de solutions informatiques durables et
                                 responsables. Initialement développé avec le framework <span
                                     class="text-bold">Symfony</span>, le site a ensuite fait l'objet d'une refonte
@@ -207,11 +209,9 @@
                                 flexible du contenu et une meilleure accessibilité.
                             </p>
                             <div class="btn">
-                                <a href="https://adei-france.fr/" target="_blank" class="btnProjet">Voir le
-                                    projet</a>
+                                <a href="https://adei-france.fr/" target="_blank" class="btnProjet">Project</a>
                                 <a href="#" target="_blank" class="btnProjet"
-                                    style="pointer-events: none; cursor: default; filter: grayscale(80%);">Voir le
-                                    code</a>
+                                    style="pointer-events: none; cursor: default; filter: grayscale(80%);">Code</a>
                             </div>
                         </div>
                     </div>
@@ -224,7 +224,7 @@
 
         <div data-aos="fade-up" id="formations">
             <section>
-                <h2>Formations et curriculum vitae</h2>
+                <h2 id="formations-title">Formations et curriculum vitae</h2>
                 <div class="formations">
                     <div class="certifications">
                         <p><span class="badge">2024 : Titre de Concepteur Développeur d'Applications</span></p>
@@ -232,7 +232,8 @@
                         <p><span class="badge">2022 : Openclassrooms (HTML / PHP / JS)</span></p>
                     </div>
                     <div class="cv">
-                        <a href="public/media/cv.pdf" class="btnProjet" target="_blank">CV à télécharger</a>
+                        <a href="public/media/cv.pdf" class="btnProjet" target="_blank" id="cv-download">CV à
+                            télécharger</a>
                     </div>
                 </div>
             </section>
@@ -243,7 +244,7 @@
         <div data-aos="fade-up" id="contact">
             <section>
                 <h2>Contact</h2>
-                <p>Retrouvez-moi sur mes réseaux sociaux ou envoyez-moi un email.</p>
+                <p id="contact-description">Retrouvez-moi sur mes réseaux sociaux ou envoyez-moi un email.</p>
                 <ul>
                     <li>
                         <a href="https://github.com/Boubacarkonate" target="blank"><i
@@ -267,7 +268,7 @@
             once: true  // Animation se produit une seule fois
         });
     </script>
-    <script src="public/index.js"></script>
+    <script src="public/js/index.js"></script>
 </body>
 
 </html>

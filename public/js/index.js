@@ -1,0 +1,64 @@
+console.log('hello');
+
+
+document.getElementById('fr-btn').addEventListener('click', () => {
+    loadLanguage('fr');
+});
+
+document.getElementById('en-btn').addEventListener('click', () => {
+    loadLanguage('en');
+});
+
+function loadLanguage(lang) {
+    fetch(`public/lang_${lang}.json`)
+        .then(response => response.json())
+        .then(data => updateTextContent(data));
+}
+
+function loadLanguage(lang) {
+    fetch(`public/lang_${lang}.json`)
+        .then(response => response.json())
+        .then(data => {
+            updateTextContent(data);
+            updateButtonLabels(lang); // Update button labels after loading language data
+        });
+}
+
+function updateTextContent(data) {
+    // Mise à jour du menu de navigation
+    document.getElementById('nav-skills').textContent = data.nav.skills;
+    document.getElementById('nav-projects').textContent = data.nav.projects;
+    document.getElementById('nav-education').textContent = data.nav.education;
+    document.getElementById('nav-contact').textContent = data.nav.contact;
+
+    // Mise à jour de l'en-tête
+    document.getElementById('header-subtitle').textContent = data.header.subtitle;
+    document.getElementById('header-description').textContent = data.header.description;
+
+    // Mise à jour des compétences
+    document.getElementById('competences-title').textContent = data.competences.title;
+    document.querySelector('.skills-design').textContent = data.competences.design;
+    document.querySelector('.skills-technologies').textContent = data.competences.technologies;
+    document.querySelector('.skills-others').textContent = data.competences.others;
+
+    // Mise à jour des projets
+    document.getElementById('projects-title').textContent = data.projects.title;
+    document.querySelector('.project-etalent-description').textContent = data.projects.etalent.description;
+    document.querySelector('.project-todolist-description').textContent = data.projects.todolist.description;
+    document.querySelector('.project-wecare-description').textContent = data.projects.wecare.description;
+    document.querySelector('.project-talentMatch-description').textContent = data.projects.talentMatch.description;
+    document.querySelector('.project-apiRest-description').textContent = data.projects.apiRest.description;
+    document.querySelector('.project-adei-description').textContent = data.projects.adei.description;
+
+    // Mise à jour des formations
+    document.getElementById('formations-title').textContent = data.formations.title;
+    document.querySelectorAll('.certifications p span').forEach((element, index) => {
+        element.textContent = data.formations.certifications[index];
+    });
+    document.getElementById('cv-download').textContent = data.formations.cv;
+
+    // Mise à jour du contact
+    document.getElementById('contact-description').textContent = data.contact.description;
+}
+
+

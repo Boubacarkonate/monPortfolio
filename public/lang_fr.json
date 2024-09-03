@@ -1,0 +1,52 @@
+{
+    "nav": {
+        "skills": "Compétences",
+        "projects": "Projets",
+        "education": "Formations",
+        "contact": "Contact"
+    },
+    "header": {
+        "title": "Boubacar Konaté",
+        "subtitle": "Développeur web",
+        "description": "Après une carrière en éducation spécialisée, j'ai embrassé le développement web mobile pour continuer à aider les autres à travers des solutions technologiques innovantes. Je transfère mes softs skills dans cette nouvelle aventure."
+    },
+    "competences": {
+        "title": "Compétences techniques",
+        "design": "Design",
+        "technologies": "Technologies",
+        "others": "Autres"
+    },
+    "projects": {
+        "title": "Quelques projets réalisés",
+        "etalent": {
+            "description": "Développé avec le framework Symfony et la base de données MySQL, ce site e-commerce adopte le pattern Model-View-Controller pour assurer une architecture claire et facilement maintenable. L'intégration de l'API Stripe permet de gérer les paiements en ligne, offrant divers abonnements."
+        },
+        "todolist": {
+            "description": "Application web responsive de gestion de tâches, développée avec le framework React et le framework CSS Bootstrap et la base de données PostgreSQL. Cette application permet aux utilisateurs de créer, organiser et suivre leurs tâches de manière intuitive, avec une interface moderne et réactive."
+        },
+        "wecare": {
+            "description": "Application mobile facilitant la communication entre les institutions médico-sociales et les familles, développée en React Native et Firebase. Cette application intègre le pattern Model-View-ViewModel pour une gestion des états et de l'interface utilisateur."
+        },
+        "talentMatch": {
+            "description": "Cette application web aide à identifier les talents du digital via un questionnaire détaillé. Développée avec le framework React, elle intègre l'API REST 'apiTalentMatch' pour une recherche avancée et précise des candidats. Grâce à la gestion d'états et à l'utilisation du provider useContext."
+        },
+        "apiRest": {
+            "description": "API REST développée en Node.js et Express.js, conçue pour le bon fonctionnement de l'application Talent Match. Cette API répond à des requêtes GET pour gèrer les profils des professionnels digitaux ainsi que les données du questionnaire utilisé pour la recherche de talents."
+        },
+        "adei": {
+            "description": "Projet dédié à la fourniture de services de solutions informatiques durables et responsables. Initialement développé avec le framework Symfony, le site a ensuite fait l'objet d'une refonte complète en WordPress pour permettre une gestion plus flexible du contenu et une meilleure accessibilité."
+        }
+    },
+    "formations": {
+        "title": "Formations et curriculum vitae",
+        "certifications": [
+            "2024 : Titre de Concepteur Développeur d'Applications",
+            "2023 : Titre de Développeur Web et Web Mobile",
+            "2022 : Openclassrooms (HTML / PHP / JS)"
+        ],
+        "cv": "CV à télécharger"
+    },
+    "contact": {
+        "description": "Retrouvez-moi sur mes réseaux sociaux ou envoyez-moi un email."
+    }
+}

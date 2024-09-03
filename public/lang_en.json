@@ -1,0 +1,54 @@
+{
+    "nav": {
+        "skills": "Skills",
+        "projects": "Projects",
+        "education": "Education",
+        "contact": "Contact"
+    },
+    "header": {
+        "title": "Boubacar Konaté",
+        "subtitle": "Web Developer",
+        "description": "After a career in special education, I embraced mobile web development to continue helping others through innovative technological solutions. I'm bringing my soft skills into this new adventure."
+    },
+    "competences": {
+        "title": "Technical Skills",
+        "design": "Design",
+        "technologies": "Technologies",
+        "others": "Others"
+    },
+    "projects": {
+        "title": "Some Completed Projects",
+        "etalent": {
+            "description": "Developed with the Symfony framework and MySQL database, this e-commerce site follows the Model-View-Controller pattern to ensure a clear and easily maintainable architecture. The integration of the Stripe API allows for online payment management, offering various subscription options."
+        },
+        "todolist": {
+            "description": "Responsive web application for task management, developed using the React framework, Bootstrap CSS framework, and PostgreSQL database. This application enables users to create, organize, and track their tasks in an intuitive manner, featuring a modern and dynamic interface that adapts seamlessly to different devices."
+        },
+        "wecare": {
+            "description": "Mobile application facilitating communication between medical-social institutions and families, developed with React Native and Firebase. It uses the Model-View-ViewModel pattern for efficient state management and user interface handling, ensuring a streamlined and user-friendly experience."
+        },
+        "talentMatch": {
+            "description": "This web application helps identify digital talents through a detailed questionnaire. Developed with the React framework, it integrates the 'apiTalentMatch' REST API for advanced and precise candidate searches. State management and the useContext provider are utilized effectively."
+        },
+        "apiRest": {
+            "description": "REST API developed with Node.js and Express.js, designed to ensure the proper functioning of the Talent Match application. This API handles GET requests to manage digital professional profiles and questionnaire data. It also facilitates smooth data interaction between the application's frontend and backend."
+        },
+        "adei": {
+            "description": "Project focused on providing sustainable and responsible IT solutions. Initially built with the Symfony framework, the site was later entirely redesigned in WordPress for more flexible content management and better accessibility. This update improved usability and adaptability to changing content and user needs."
+        }
+
+
+    },
+    "formations": {
+        "title": "Education and Curriculum Vitae",
+        "certifications": [
+            "2024: Application Designer and Developer Certification",
+            "2023: Web and Mobile Developer Certification",
+            "2022: Openclassrooms (HTML / PHP / JS)"
+        ],
+        "cv": "Download CV"
+    },
+    "contact": {
+        "description": "Find me on my social networks or send me an email."
+    }
+}

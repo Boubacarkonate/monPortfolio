@@ -223,6 +223,23 @@ section {
     color: #030621;
 }
 
+.btnProjetLang {
+    display: inline-block;
+    padding: 2px 5px;
+    background-color: var(--primary-color);
+    color: var(--section-background-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    /* Ajout de la propriété de décoration de texte */
+}
+
+.btnProjetLang:focus {
+    background-color: var(--secondary-color);
+    color: #030621;
+}
+
 .formations {
     display: flex;
     justify-content: space-between;
