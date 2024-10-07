@@ -25,7 +25,7 @@
             "description": "Responsive web application for task management, developed using the React framework, Bootstrap CSS framework, and PostgreSQL database. This application enables users to create, organize, and track their tasks in an intuitive manner, featuring a modern and dynamic interface that adapts seamlessly to different devices."
         },
         "travelBlog": {
-            "description": "Travel blog web application developed in React with TypeScript, ensuring better type management and improved code maintainability. This application integrates the Tailwind CSS framework for a responsive and modern user interface."
+            "description": "This travel blog web application is developed in React with TypeScript, providing better type management and improved code maintainability. This application integrates the Tailwind CSS framework for a responsive design and a modern user interface."
         },
         "talentMatch": {
             "description": "This web application helps identify digital talents through a detailed questionnaire. Developed with the React framework, it integrates the 'apiTalentMatch' REST API for advanced and precise candidate searches. State management and the useContext provider are utilized effectively."
