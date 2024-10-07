@@ -1,6 +1,3 @@
-console.log('hello');
-
-
 document.getElementById('fr-btn').addEventListener('click', () => {
     loadLanguage('fr');
 });
@@ -45,7 +42,7 @@ function updateTextContent(data) {
     document.getElementById('projects-title').textContent = data.projects.title;
     document.querySelector('.project-etalent-description').textContent = data.projects.etalent.description;
     document.querySelector('.project-todolist-description').textContent = data.projects.todolist.description;
-    document.querySelector('.project-wecare-description').textContent = data.projects.wecare.description;
+    document.querySelector('.project-travelBlog-description').textContent = data.projects.travelBlog.description;
     document.querySelector('.project-talentMatch-description').textContent = data.projects.talentMatch.description;
     document.querySelector('.project-apiRest-description').textContent = data.projects.apiRest.description;
     document.querySelector('.project-adei-description').textContent = data.projects.adei.description;

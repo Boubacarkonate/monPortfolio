@@ -24,8 +24,8 @@
         "todolist": {
             "description": "Application web responsive de gestion de tâches, développée avec le framework React et le framework CSS Bootstrap et la base de données PostgreSQL. Cette application permet aux utilisateurs de créer, organiser et suivre leurs tâches de manière intuitive, avec une interface moderne et réactive."
         },
-        "wecare": {
-            "description": "Application mobile facilitant la communication entre les institutions médico-sociales et les familles, développée en React Native et Firebase. Cette application intègre le pattern Model-View-ViewModel pour une gestion des états et de l'interface utilisateur."
+        "travelBlog": {
+            "description": "Application web de blog de voyage développée en React avec TypeScript qui assure une meilleure gestion des types et améliore la maintenabilité du code. Cette application intègre le Framework Tailwind CSS pour une interface utilisateur réactive et moderne."
         },
         "talentMatch": {
             "description": "Cette application web aide à identifier les talents du digital via un questionnaire détaillé. Développée avec le framework React, elle intègre l'API REST 'apiTalentMatch' pour une recherche avancée et précise des candidats. Grâce à la gestion d'états et à l'utilisation du provider useContext."
