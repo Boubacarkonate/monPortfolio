@@ -41,11 +41,11 @@ function updateTextContent(data) {
     // Mise à jour des projets
     document.getElementById('projects-title').textContent = data.projects.title;
     document.querySelector('.project-etalent-description').textContent = data.projects.etalent.description;
-    document.querySelector('.project-todolist-description').textContent = data.projects.todolist.description;
+    document.querySelector('.project-taskMaster-description').textContent = data.projects.taskMaster.description;
     document.querySelector('.project-travelBlog-description').textContent = data.projects.travelBlog.description;
-    document.querySelector('.project-talentMatch-description').textContent = data.projects.talentMatch.description;
-    document.querySelector('.project-apiRest-description').textContent = data.projects.apiRest.description;
+    document.querySelector('.project-flashnet75-description').textContent = data.projects.flashnet75.description;
     document.querySelector('.project-adei-description').textContent = data.projects.adei.description;
+    document.querySelector('.project-weCare-description').textContent = data.projects.weCare.description;
 
     // Mise à jour des formations
     document.getElementById('formations-title').textContent = data.formations.title;

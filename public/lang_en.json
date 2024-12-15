@@ -8,7 +8,7 @@
     "header": {
         "title": "Boubacar Konaté",
         "subtitle": "Web Developer",
-        "description": "After a career in special education, I embraced mobile web development to continue helping others through innovative technological solutions. I'm bringing my soft skills into this new adventure."
+        "description": "After a fulfilling career in special education, I decided to apply my skills to the field of web and mobile development. Driven by the desire to help others, I design modern and accessible technological solutions. My soft skills, such as empathy, curiosity, problem-solving, and collaboration, enable me to create user-oriented applications that combine technology with social impact."
     },
     "competences": {
         "title": "Technical Skills",
@@ -19,22 +19,31 @@
     "projects": {
         "title": "Some Completed Projects",
         "etalent": {
-            "description": "Developed with the Symfony framework and MySQL database, this e-commerce site follows the Model-View-Controller pattern to ensure a clear and easily maintainable architecture. The integration of the Stripe API allows for online payment management, offering various subscription options."
+            "description": "Developed in PHP with the Symfony framework and MySQL database, this e-commerce site follows the Model-View-Controller pattern to ensure a clear and maintainable architecture. The integration of the Stripe API allows for subscribing to various online plans."
         },
         "todolist": {
             "description": "Responsive web application for task management, developed using the React framework, Bootstrap CSS framework, and PostgreSQL database. This application enables users to create, organize, and track their tasks in an intuitive manner, featuring a modern and dynamic interface that adapts seamlessly to different devices."
         },
         "travelBlog": {
-            "description": "This is a travel blog web application developed in React with TypeScript, which provides enhanced type management and improves code maintainability. The use of TypeScript ensures that the application is robust and easy to scale as new features are added. Additionally, this application integrates the Tailwind CSS framework to create a responsive and modern user interface."
+            "description": "Travel blog developed in React with TypeScript, ensuring better type management and improved code maintainability, and Tailwind CSS for a modern interface. The application consumes an external API to dynamically display travel articles."
         },
         "talentMatch": {
             "description": "This web application helps identify digital talents through a detailed questionnaire. Developed with the React framework, it integrates the 'apiTalentMatch' REST API for advanced and precise candidate searches. State management and the useContext provider are utilized effectively."
+        },
+        "taskMaster": {
+            "description": "A task management application built with Next.js, the Prisma ORM, and a MySQL database. The modern design is created with Tailwind CSS, and efficient API routes ensure effective task management: create, read, update, and delete."
         },
         "apiRest": {
             "description": "REST API developed with Node.js and Express.js, designed to ensure the proper functioning of the Talent Match application. This API handles GET requests to manage digital professional profiles and questionnaire data. It also facilitates smooth data interaction between the application's frontend and backend."
         },
         "adei": {
             "description": "Project focused on providing sustainable and responsible IT solutions. Initially built with the Symfony framework, the site was later entirely redesigned in WordPress for more flexible content management and better accessibility. This update improved usability and adaptability to changing content and user needs."
+        },
+        "flashnet75": {
+            "description": "A business showcase website developed with WordPress, designed to promote cleaning services for both individuals and companies. Advanced customization was done with HTML and CSS, creating a design tailored to the company's identity."
+        },
+        "weCare": {
+            "description": "A mobile application facilitating communication between healthcare and social institutions and families, developed with React Native and Firebase. This application integrates the MVVM pattern and offers features such as a secure messaging system."
         }
 
 

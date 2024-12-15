@@ -111,8 +111,8 @@ header h2 {
 }
 
 header p {
-    word-spacing: 4px;
-    line-height: 1.8;
+    /* word-spacing: 4px; */
+    line-height: 2;
 }
 
 .btn {
@@ -169,6 +169,7 @@ section {
     display: flex;
     align-items: center;
     padding-bottom: 10%;
+    line-height: 1.8;
 }
 
 .skills {
@@ -209,6 +210,7 @@ section {
     margin-top: 5%;
     margin-bottom: 5%;
     line-height: 150%;
+    line-height: 2;
 }
 
 .btnProjet {
