@@ -110,6 +110,11 @@ header h2 {
     margin-bottom: 1%;
 }
 
+header p {
+    word-spacing: 4px;
+    line-height: 1.8;
+}
+
 .btn {
     display: flex;
     justify-content: space-around;
