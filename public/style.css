@@ -111,8 +111,7 @@ header h2 {
 }
 
 header p {
-    /* word-spacing: 4px; */
-    line-height: 2;
+    line-height: 1.8;
 }
 
 .btn {
