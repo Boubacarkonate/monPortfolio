@@ -1,19 +1,24 @@
-let currentLanguage = 'en'; // Langue par défaut
+document.getElementById('fr-btn').addEventListener('click', () => {
+    loadLanguage('fr');
+});
 
-// Écouteur d'événement pour le bouton de basculement
-document.getElementById('lang-toggle-btn').addEventListener('click', () => {
-    currentLanguage = currentLanguage === 'en' ? 'fr' : 'en'; // Bascule entre 'en' et 'fr'
-    loadLanguage(currentLanguage);
+document.getElementById('en-btn').addEventListener('click', () => {
+    loadLanguage('en');
 });
 
 function loadLanguage(lang) {
     fetch(`public/lang_${lang}.json`)
         .then(response => response.json())
+        .then(data => updateTextContent(data));
+}
+
+function loadLanguage(lang) {
+    fetch(`public/lang_${lang}.json`)
+        .then(response => response.json())
         .then(data => {
-            updateTextContent(data); // Met à jour les éléments HTML
-            updateButtonLabel(lang); // Met à jour le texte du bouton
-        })
-        .catch(error => console.error(`Erreur lors du chargement de la langue: ${error}`));
+            updateTextContent(data);
+            updateButtonLabels(lang); // Update button labels after loading language data
+        });
 }
 
 function updateTextContent(data) {
@@ -53,10 +58,4 @@ function updateTextContent(data) {
     document.getElementById('contact-description').textContent = data.contact.description;
 }
 
-function updateButtonLabel(lang) {
-    const toggleButton = document.getElementById('lang-toggle-btn');
-    toggleButton.textContent = lang === 'en' ? 'Switch to French' : 'Passer en anglais'; // Change le texte selon la langue
-}
 
-// Chargement initial de la langue par défaut
-loadLanguage(currentLanguage);
