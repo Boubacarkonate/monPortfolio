@@ -5,10 +5,10 @@
     --primary-color: #5e5eed;
     /* --primary-color:  #007bff;  les boutons*/
     --secondary-color: #17a2b8;
-    --background-color: radial-gradient(circle, rgba(11, 5, 78, 1) 0%, rgba(18, 18, 18, 1) 100%);
+    --background-color: radial-gradient(circle, rgba(11, 5, 78, 1) 30%, rgba(18, 18, 18, 1) 100%);
     /* --background-color: #030621; */
     --text-color: #d4e8f7;
-    --section-background-color: radial-gradient(circle, rgba(11, 5, 78, 1) 0%, rgba(18, 18, 18, 1) 100%);
+    --section-background-color: radial-gradient(circle, rgba(11, 5, 78, 1) 30%, rgba(18, 18, 18, 1) 100%);
     /* --section-background-color: #030621; */
     --section-text-color: #d4e8f7;
 }
@@ -25,8 +25,7 @@ body {
     font-size: 17px;
     /*à modifier si trop grand*/
     margin-top: 5%;
-    background: rgb(11, 5, 78);
-    background: radial-gradient(circle, rgba(11, 5, 78, 1) 0%, rgba(18, 18, 18, 1) 100%);
+    background: var(--background-color);
     color: var(--text-color);
     overflow-x: hidden;
     display: grid;
@@ -59,7 +58,7 @@ a::after {
     display: block;
     width: 100%;
     height: 3px;
-    background: #007bff;
+    background: var(--primary-color);
     transform: scale(0);
     transition: transform 0.2s ease-in-out;
 }
@@ -164,7 +163,7 @@ section {
     border-radius: 8px;
     background-color: var(--section-background-color);
     color: var(--section-text-color);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.5px 0.5px rgba(0, 0, 0, 0.05);
 }
 
 .competences {
@@ -229,7 +228,7 @@ section {
     display: inline-block;
     padding: 2px 5px;
     background-color: var(--primary-color);
-    color: var(--section-background-color);
+    color: var(--text-color);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -420,5 +419,38 @@ footer ul li {
 @media (orientation: landscape) {
     nav ul li {
         margin-left: 10px;
+    }
+}
+
+
+.star {
+    position: fixed;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: twinkle 2s infinite ease-in-out, move 60s linear infinite;
+}
+
+@keyframes twinkle {
+
+    0%,
+    100% {
+        opacity: 0.8;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100vh);
     }
 }
