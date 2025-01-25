@@ -120,6 +120,12 @@ header p {
     line-height: 1.8;
 }
 
+header .softSkills {
+    font-weight: bolder;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
 .btn {
     display: flex;
     justify-content: space-around;
