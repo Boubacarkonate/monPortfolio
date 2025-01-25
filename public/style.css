@@ -2,11 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 :root {
-    --primary-color: #007bff;
+    --primary-color: #5e5eed;
+    /* --primary-color:  #007bff;  les boutons*/
     --secondary-color: #17a2b8;
-    --background-color: #030621;
+    --background-color: radial-gradient(circle, rgba(11, 5, 78, 1) 0%, rgba(18, 18, 18, 1) 100%);
+    /* --background-color: #030621; */
     --text-color: #d4e8f7;
-    --section-background-color: #030621;
+    --section-background-color: radial-gradient(circle, rgba(11, 5, 78, 1) 0%, rgba(18, 18, 18, 1) 100%);
+    /* --section-background-color: #030621; */
     --section-text-color: #d4e8f7;
 }
 
@@ -19,8 +22,11 @@
 
 body {
     font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    /*à modifier si trop grand*/
     margin-top: 5%;
-    background-color: var(--background-color);
+    background: rgb(11, 5, 78);
+    background: radial-gradient(circle, rgba(11, 5, 78, 1) 0%, rgba(18, 18, 18, 1) 100%);
     color: var(--text-color);
     overflow-x: hidden;
     display: grid;
@@ -187,10 +193,11 @@ section {
 }
 
 .card {
-    background-color: var(--section-background-color);
+    background: var(--section-background-color);
     color: var(--section-text-color);
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1 */
     overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
