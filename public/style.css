@@ -422,7 +422,7 @@ footer ul li {
     }
 }
 
-
+/*Génération d'étoiles*/
 .star {
     position: fixed;
     width: 2px;

@@ -17,7 +17,7 @@ function loadLanguage(lang) {
         .then(response => response.json())
         .then(data => {
             updateTextContent(data);
-            updateButtonLabels(lang); // Update button labels after loading language data
+            updateButtonLabels(lang); 
         });
 }
 
@@ -61,7 +61,7 @@ function updateTextContent(data) {
 
 // Génération des étoiles
 const starContainer = document.querySelector('body');
-const starCount = 100;
+const starCount = 50;
 
 for (let i = 0; i < starCount; i++) {
     const star = document.createElement('div');
