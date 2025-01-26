@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -24,20 +24,24 @@
 </head>
 
 <body>
-    <nav>
+    <nav aria-label="Menu principal">
         <h1>
             <i class="fa-solid fa-laptop-code"></i>
             Bouba
         </h1>
         <ul>
-            <li><a href="#competences" id="nav-skills">Compétences</a></li>
-            <li><a href="#projets" id="nav-projects">Projets</a></li>
-            <li><a href="#formations" id="nav-education">Formations</a></li>
-            <li><a href="#contact" id="nav-contact">Contact</a></li>
+            <li><a href="#competences" id="nav-skills" aria-label="Aller à la section Compétences"
+                    tabindex="1">Compétences</a></li>
+            <li><a href="#projets" id="nav-projects" aria-label="Aller à la section Projets" tabindex="2">Projets</a>
+            </li>
+            <li><a href="#formations" id="nav-education" aria-label="Aller à la section Formations"
+                    tabindex="3">Formations</a></li>
+            <li><a href="#contact" id="nav-contact" aria-label="Aller à la section Contact" tabindex="4">Contact</a>
+            </li>
         </ul>
         <div class="language-switch">
-            <button id="fr-btn" class="btnProjetLang btnProjet">FR</button>
-            <button id="en-btn" class="btnProjetLang btnProjet">EN</button>
+            <button id="fr-btn" lang="fr" aria-label="Basculer en français">FR</button>
+            <button id="en-btn" lang="en" aria-label="Switch to English">EN</button>
         </div>
     </nav>
     <!-- <div class="star-background"></div> -->
@@ -151,8 +155,8 @@
                     </div>
 
                     <div class="card">
-                        <img src="public/media/projects/travel.jpg" class="card-img-top projects" alt="Travel Blog"
-                            loading="lazy">
+                        <img src="public/media/projects/travel.jpg" class="card-img-top projects"
+                            alt="Capture d'écran du Travel Blog" loading="lazy">
                         <div class="card-body">
                             <h3 class="card-title">The Travel Blog</h3>
                             <p class="card-text project-travelBlog-description">
@@ -175,8 +179,8 @@
 
 
                     <div class="card">
-                        <img src="public/media/projects/weCare.png" class="card-img-top projects" alt="Projet WeCare"
-                            loading="lazy">
+                        <img src="public/media/projects/weCare.png" class="card-img-top projects"
+                            alt="Capture d'écran du Projet WeCare" loading="lazy">
                         <div class="card-body">
                             <h3 class="card-title">WeCare</h3>
                             <p class="card-text project-weCare-description">
@@ -197,8 +201,8 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img src="public/media/projects/etalent.png" class="card-img-top projects" alt="Projet e-talent"
-                            loading="lazy">
+                        <img src="public/media/projects/etalent.png" class="card-img-top projects"
+                            alt="Capture d'écran du Projet e-talent" loading="lazy">
                         <div class="card-body">
                             <h3 class="card-title">E-talentSocial</h3>
                             <p class="card-text project-etalent-description">
@@ -222,8 +226,8 @@
 
 
                     <div class="card">
-                        <img src="public/media/projects/adei.jpg" class="card-img-top projects" alt="projet wecare"
-                            loading="lazy">
+                        <img src="public/media/projects/adei.jpg" class="card-img-top projects"
+                            alt="Capture d'écran du projet wecare" loading="lazy">
                         <div class="card-body">
                             <h3 class="card-title">Adei-france</h3>
                             <p class="card-text project-adei-description">
@@ -245,7 +249,7 @@
 
                     <div class="card">
                         <img src="public/media/projects/flashnet75.png" class="card-img-top projects"
-                            alt="Projet Flasnet75" loading="lazy">
+                            alt="Capture d'écran du Projet Flasnet75" loading="lazy">
                         <div class="card-body">
                             <h3 class="card-title">FlashNet75</h3>
                             <p class="card-text project-flashnet75-description">
@@ -265,7 +269,7 @@
                         </div>
                     </div>
                     <!-- <div class="card">
-                        <img src="public/media/projects/toDoList.png" class="card-img-top projects" alt="projet adei" loading="lazy">
+                        <img src="public/media/projects/toDoList.png" class="card-img-top projects" alt="Capture d'écran du projet adei" loading="lazy">
                         <div class="card-body">
                             <h3 class="card-title">ToDoList</h3>
                             <p class="card-text project-todolist-description">
@@ -289,7 +293,7 @@
 
                     <!-- <div class="card">
                         <img src="public/media/projects/talentMatch.png" class="card-img-top projects"
-                            alt="projet wecare" loading="lazy">
+                            alt="Capture d'écran du projet wecare" loading="lazy">
                         <div class="card-body">
                             <h3 class="card-title">Talent Match</h3>
                             <p class="card-text project-talentMatch-description">
@@ -309,7 +313,7 @@
                     </div> -->
 
                     <!-- <div class="card">
-                        <img src="public/media/projects/apiRest.png" class="card-img-top projects" alt="projet apiRest" loading="lazy">
+                        <img src="public/media/projects/apiRest.png" class="card-img-top projects" alt="Capture d'écran du projet apiRest" loading="lazy">
                         <div class="card-body">
                             <h3 class="card-title">API REST</h3>
                             <p class="card-text project-apiRest-description">
@@ -344,7 +348,7 @@
                     </div>
                     <div class="cv">
                         <a href="public/media/cv.pdf" class="btnProjet" target="_blank" id="cv-download"
-                            rel="noopener noreferrer">CV
+                            rel="noopener noreferrer" aria-label="Télécharger le CV au format PDF">CV
                             à
                             télécharger</a>
                     </div>
@@ -361,15 +365,18 @@
                 <ul>
                     <li>
                         <a href="https://github.com/Boubacarkonate" target="blank" rel="noopener noreferrer"><i
-                                class="fa-brands fa-github"></i></a>
+                                class="fa-brands fa-github"
+                                aria-label="Visiter mon profil GitHub, ouvre une nouvelle fenêtre"></i></a>
                     </li>
                     <li>
                         <a href="https://www.linkedin.com/in/boubacar-konaté-a87531261" target="_blank"
-                            rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                            rel="noopener noreferrer"
+                            aria-label="Visiter mon profil LinkedIn, ouvre une nouvelle fenêtre"><i
+                                class="fa-brands fa-linkedin"></i></a>
                     </li>
                     <li>
-                        <a href="mailto:boubacar.konate@outlook.fr" target="_blank"
-                            rel="noopener noreferrer">boubacar.konate@outlook.fr</a>
+                        <a href="mailto:boubacar.konate@outlook.fr" target="_blank" rel="noopener noreferrer"
+                            aria-label="Pour me contacter par mail, ouvre une nouvelle fenêtre">boubacar.konate@outlook.fr</a>
                     </li>
                 </ul>
             </section>
