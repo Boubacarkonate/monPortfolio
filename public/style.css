@@ -433,6 +433,13 @@ footer ul li {
     }
 }
 
+/*animation AOS desactivable*/
+@media (prefers-reduced-motion: reduce) {
+    [data-aos] {
+        animation: none !important;
+    }
+}
+
 /*Génération d'étoiles*/
 .star {
     position: fixed;
