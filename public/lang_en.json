@@ -44,6 +44,9 @@
         },
         "weCare": {
             "description": "A mobile application facilitating communication between healthcare and social institutions and families, developed with React Native and Firebase. This application integrates the MVVM pattern and offers features such as a secure messaging system."
+        },
+        "projetJs": {
+            "description": "A project featuring a collection of small interactive functionalities developed in pure HTML, CSS, and JavaScript, such as a calculator, a currency converter, a note manager, and simple games like Rock-Paper-Scissors. These projects explore key concepts in JavaScript."
         }
 
 

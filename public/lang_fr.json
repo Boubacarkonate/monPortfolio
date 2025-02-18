@@ -44,6 +44,9 @@
         },
         "weCare": {
             "description": "Site vitrine professionnel développé avec WordPress, conçu pour promouvoir les services de nettoyage auprès des particuliers et des entreprises. Une personnalisation avancée a été réalisée avec HTML et CSS, permettant de créer un design adapté à l'identité de l'entreprise."
+        },
+        "projetJs": {
+            "description": "Projet regroupant une collection de petites fonctionnalités interactives développées en HTML, CSS et JavaScript pur, telles qu’une calculatrice, un convertisseur de devises, un gestionnaire de notes, ou encore des jeux simples comme Pierre-Papier-Ciseaux. Ces projets explorent des concepts clés en JS."
         }
     },
     "formations": {
