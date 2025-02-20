@@ -42,7 +42,6 @@ function updateTextContent(data) {
     document.getElementById('projects-title').textContent = data.projects.title;
     document.querySelector('.project-etalent-description').textContent = data.projects.etalent.description;
     document.querySelector('.project-taskMaster-description').textContent = data.projects.taskMaster.description;
-    document.querySelector('.project-travelBlog-description').textContent = data.projects.travelBlog.description;
     document.querySelector('.project-flashnet75-description').textContent = data.projects.flashnet75.description;
     document.querySelector('.project-projetJs-description').textContent = data.projects.projetJs.description;
     document.querySelector('.project-weCare-description').textContent = data.projects.weCare.description;
