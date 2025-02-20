@@ -46,6 +46,7 @@ function updateTextContent(data) {
     document.querySelector('.project-flashnet75-description').textContent = data.projects.flashnet75.description;
     document.querySelector('.project-projetJs-description').textContent = data.projects.adei.description;
     document.querySelector('.project-weCare-description').textContent = data.projects.weCare.description;
+    document.querySelector('.project-erpSocial-description').textContent = data.projects.erpSocial.description;
 
     // Mise à jour des formations
     document.getElementById('formations-title').textContent = data.formations.title;

@@ -47,6 +47,9 @@
         },
         "projetJs": {
             "description": "A project featuring a collection of small interactive functionalities developed in pure HTML, CSS, and JavaScript, such as a calculator, a currency converter, a note manager, and simple games like Rock-Paper-Scissors. These projects explore key concepts in JavaScript."
+        },
+        "erpSocial": {
+            "description": "ERP Social is a test application for team and product management. It is built with Next.js and TypeScript, featuring a modern interface designed with Tailwind CSS. Authentication is handled via Clerk, online payments are processed with Stripe, and data management is powered by PostgreSQL."
         }
 
 

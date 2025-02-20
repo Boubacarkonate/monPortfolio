@@ -47,6 +47,9 @@
         },
         "projetJs": {
             "description": "Projet regroupant une collection de petites fonctionnalités interactives développées en HTML, CSS et JavaScript pur, telles qu’une calculatrice, un convertisseur de devises, un gestionnaire de notes, ou encore des jeux simples comme Pierre-Papier-Ciseaux. Ces projets explorent des concepts clés en JS."
+        },
+        "erpSocial": {
+            "description": "ERP social est une application test pour la gestion des équipes et des produits. Elle est crée en Next.js et TypeScript, avec Tailwind CSS pour une interface moderne. L'authentification est assurée via Clerk. Les paiements en ligne sont effectués avec Stripe et gestion des données sur PostgreSQL."
         }
     },
     "formations": {
