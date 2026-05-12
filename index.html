@@ -2,444 +2,351 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-    <link rel="stylesheet" href="public/style.css">
-    <title>Portfolio</title>
-    <meta name="description" content=" Developpeur full stack">
-    <link rel="icon" href="public/media/img.png" type="image/x-icon">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4MTKXRJ3M1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boubacar Konaté — Développeur Full Stack</title>
+  <meta name="description" content="Boubacar Konaté — Développeur web full stack, React, Node.js, Symfony">
+  <link rel="icon" href="public/media/img.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="style.css">
 
-        gtag('config', 'G-4MTKXRJ3M1');
-    </script>
+  <!-- Google tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4MTKXRJ3M1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-4MTKXRJ3M1');
+  </script>
 </head>
 
 <body>
-    <nav aria-label="Menu principal">
-        <h1>
-            <i class="fa-solid fa-laptop-code"></i>
-            Bouba
-        </h1>
-        <ul>
-            <li><a href="#competences" id="nav-skills" aria-label="Aller à la section Compétences"
-                    tabindex="1">Compétences</a></li>
-            <li><a href="#projets" id="nav-projects" aria-label="Aller à la section Projets" tabindex="2">Projets</a>
-            </li>
-            <li><a href="#formations" id="nav-education" aria-label="Aller à la section Formations"
-                    tabindex="3">Formations</a></li>
-            <li><a href="#contact" id="nav-contact" aria-label="Aller à la section Contact" tabindex="4">Contact</a>
-            </li>
-        </ul>
-        <div class="language-switch">
-            <button id="fr-btn" class="btnProjetLang btnProjet" lang="fr" aria-label="Basculer en français">FR</button>
-            <button id="en-btn" class="btnProjetLang btnProjet" lang="en" aria-label="Switch to English">EN</button>
+
+  <!-- NAV -->
+  <nav id="navbar" aria-label="Navigation principale">
+    <a href="#" class="nav-logo">
+      <span class="logo-bracket">{</span>BK<span class="logo-bracket">}</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#competences" data-key="nav-skills">Compétences</a></li>
+      <li><a href="#projets" data-key="nav-projects">Projets</a></li>
+      <li><a href="#formations" data-key="nav-education">Formations</a></li>
+      <li><a href="#contact" data-key="nav-contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang-switch">
+        <button id="fr-btn" class="lang-btn active" aria-label="Français">FR</button>
+        <button id="en-btn" class="lang-btn" aria-label="English">EN</button>
+      </div>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <ul>
+      <li><a href="#competences" data-key="nav-skills">Compétences</a></li>
+      <li><a href="#projets" data-key="nav-projects">Projets</a></li>
+      <li><a href="#formations" data-key="nav-education">Formations</a></li>
+      <li><a href="#contact" data-key="nav-contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <header class="hero" id="hero">
+    <div class="hero-bg">
+      <canvas id="particle-canvas"></canvas>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        <span id="hero-available">Disponible pour de nouvelles opportunités</span>
+      </div>
+      <div class="hero-name reveal">
+        <img src="public/media/profile.png" alt="Boubacar Konaté" class="avatar" loading="lazy">
+        <div>
+          <h1>Boubacar<br><em>Konaté</em></h1>
+          <p class="hero-role" id="hero-role">Développeur Full Stack</p>
         </div>
-    </nav>
-    <!-- <div class="star-background"></div> -->
-    <header>
-        <div class="title">
-            <img src="public/media/profile.png" alt="profile-photo" loading="lazy">
-            <h2>Boubacar Konaté</h2>
+      </div>
+      <p class="hero-desc reveal" id="header-description">
+        Après une carrière enrichissante dans le travail social, j'ai orienté mes compétences vers le développement web.
+        Animé par le désir d'aider, je conçois des solutions technologiques modernes et accessibles — combinant rigueur
+        technique et impact humain.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#projets" class="btn-primary" id="hero-cta">Voir mes projets</a>
+        <a href="public/media/cv.pdf" target="_blank" rel="noopener noreferrer" class="btn-outline"
+          id="hero-cv">Télécharger CV</a>
+      </div>
+      <div class="hero-socials reveal">
+        <a href="https://github.com/Boubacarkonate" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+            class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/boubacar-konaté-a87531261" target="_blank" rel="noopener noreferrer"
+          aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:boubacar.konate@outlook.fr" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="scroll-hint" aria-hidden="true">
+      <span></span>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- SKILLS -->
+    <section id="competences" class="section">
+      <div class="section-label reveal" data-key="section-skills">— Compétences</div>
+      <h2 class="section-title reveal" id="competences-title">Compétences techniques</h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-card-icon"><i class="fa-solid fa-pen-nib" aria-hidden="true"></i></div>
+          <h3 class="skills-design">Design</h3>
+          <ul>
+            <li><img src="public/media/icons/icons8-figma-16.svg" alt="" aria-hidden="true"
+                loading="lazy"><span>Figma</span></li>
+            <li><img src="public/media/icons/icons8-adobe-xd-16.svg" alt="" aria-hidden="true"
+                loading="lazy"><span>Adobe XD</span></li>
+          </ul>
         </div>
-        <h2 id="header-subtitle">Développeur web</h2>
-        <p id="header-description">Après une carrière enrichissante dans le travail social, j'ai choisi d'orienter mes
-            compétences au service du développement web et mobile. Animé par le désir d’aider les autres, j'ai comme
-            volonté de concevoir des
-            solutions technologiques modernes et accessibles. Mes soft skills, tels que l' <span
-                class="softSkills">ECOUTE</span>, la <span class="softSkills">CURIOSITE</span>, la <span
-                class="softSkills">RESOLUTION DE PROBLEMES</span> et la <span class="softSkills">COLLABORATION</span>,
-            me permettent de créer des
-            applications orientées
-            utilisateur, combinant
-            technologie et impact social.
-        </p>
-        <div class="btn-container">
-            <ul>
-                <li class="btn"><a href="https://github.com/Boubacarkonate" target="blank" rel="noopener noreferrer"
-                        aria-label="Visiter mon profil Github, ouvre une nouvelle fenêtre">Github</a></li>
-                <li class="btn"><a href="https://www.linkedin.com/in/boubacar-konaté-a87531261" target="blank"
-                        rel="noopener noreferrer"
-                        aria-label="Visiter mon profil LinkedIn, ouvre une nouvelle fenêtre">LinkedIn</a></li>
-                <li class="btn"><a href="mailto:boubacar.konate@outlook.fr" target="blank" rel="noopener noreferrer"
-                        aria-label="Pour me contacter par mail, ouvre une nouvelle fenêtre">Email</a></li>
-            </ul>
+        <div class="skill-card reveal">
+          <div class="skill-card-icon"><i class="fa-solid fa-code" aria-hidden="true"></i></div>
+          <h3 class="skills-technologies">Technologies</h3>
+          <ul>
+            <li><img src="public/media/icons/icons8-react.svg" alt="" loading="lazy"><span>React</span></li>
+            <li><img src="public/media/icons/nextjs.svg" alt="" loading="lazy"><span>Next.js</span></li>
+            <li><img src="public/media/icons/icons8-nodejs-16.svg" alt="" loading="lazy"><span>Node.js</span></li>
+            <li><img src="public/media/icons/icons8-php-16.svg" alt="" loading="lazy"><span>PHP</span></li>
+            <li><img src="public/media/icons/icons8-symfony-16.svg" alt="" loading="lazy"><span>Symfony</span></li>
+          </ul>
         </div>
-    </header>
-
-    <main>
-        <div data-aos="zoom-in-up" data-aos-duration="2000" id="competences">
-            <section id="sectionCompetences">
-                <h2 id="competences-title">Compétences techniques</h2>
-                <div class="competences">
-                    <div>
-                        <ul>
-                            <li class="skills skills-design">Design</li>
-                            <li><img src="public/media/icons/icons8-figma-16.svg" alt="logo figma" loading="lazy">Figma
-                            </li>
-                            <li><img src="public/media/icons/icons8-adobe-xd-16.svg" alt="logo adobeXd">AdobeXD</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul>
-                            <li class="skills skills-technologies">Technologies</li>
-                            <li><img src="public/media/icons/icons8-react.svg" alt="logo react" loading="lazy">React
-                            </li>
-                            <li><img src="public/media/icons/nextjs.svg" alt="logo next" loading="lazy">Next.js</li>
-                            <li><img src="public/media/icons/icons8-nodejs-16.svg" alt="logo node" loading="lazy">NodeJS
-                            </li>
-                            <li><img src="public/media/icons/icons8-php-16.svg" alt="logo php" loading="lazy">PHP</li>
-                            <li><img src="public/media/icons/icons8-symfony-16.svg" alt="logo symfony"
-                                    loading="lazy">Symfony
-                            </li>
-                            <!-- <li><img src="public/media/icons/icons8-swiftui.svg" alt="logo SwiftUI" loading="lazy">SwiftUI
-                            </li> -->
-                        </ul>
-                    </div>
-                    <div>
-                        <ul>
-                            <li class="skills">Database</li>
-                            <li><img src="public/media/icons/icons8-mysql-16.svg" alt="mysql" loading="lazy">MySQL</li>
-                            <li><img src="public/media/icons/icons8-postgresql.svg" alt="logo mysql"
-                                    loading="lazy">PostgreSQL
-                            </li>
-                            <li><img src="public/media/icons/icons8-mongodb-a-cross-platform-document-oriented-database-program-16.png"
-                                    alt="mongo" loading="lazy">MongoDB</li>
-                            <li><img src="public/media/icons/icons8-firebase-16.svg" alt="logo firebase"
-                                    loading="lazy">Firebase</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul>
-                            <li class="skills skills-others">Autres</li>
-                            <li><img src="public/media/icons/icons8-github-16.svg" alt="logo github"
-                                    loading="lazy">Github
-                            </li>
-                            <li><img src="public/media/icons/icons8-merise-16.png" alt="logo merise"
-                                    loading="lazy">Merise
-                            </li>
-                            <li><img src="public/media/icons/icons8-uml-16.png" alt="logo uml" loading="lazy">UML</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
+        <div class="skill-card reveal">
+          <div class="skill-card-icon"><i class="fa-solid fa-database" aria-hidden="true"></i></div>
+          <h3 class="skills-databases">Base de données</h3>
+          <ul>
+            <li><img src="public/media/icons/icons8-mysql-16.svg" alt="" loading="lazy"><span>MySQL</span></li>
+            <li><img src="public/media/icons/icons8-postgresql.svg" alt="" loading="lazy"><span>PostgreSQL</span></li>
+            <li><img src="public/media/icons/icons8-mongodb-a-cross-platform-document-oriented-database-program-16.png"
+                alt="" loading="lazy"><span>MongoDB</span></li>
+            <li><img src="public/media/icons/icons8-firebase-16.svg" alt="" loading="lazy"><span>Firebase</span></li>
+          </ul>
         </div>
-
-        <div data-aos="zoom-in-up" data-aos-duration="2000" id="projets">
-            <section>
-                <h2 id="projects-title">Quelques projets réalisés</h2>
-                <div class="projects-container">
-                    <div class="card">
-                        <img src="public/media/projects/socialErp.png" class="card-img-top projects"
-                            alt="Capture d'écran du projet social ERP" loading="lazy">
-                        <div class="card-body">
-                            <h3 class="card-title">Social Erp</h3>
-                            <p class="card-text project-erpSocial-description">
-                                ERP social est une application test pour la gestion des équipes et des produits. Elle
-                                est crée en <span class="text-bold">Next.js</span> et <span
-                                    class="text-bold">TypeScript</span>,
-                                avec <span class="text-bold">Tailwind CSS</span> pour une interface moderne.
-                                L'authentification est assurée via <span class="text-bold">Clerk</span>. Les paiements
-                                en ligne sont effectués avec <span class="text-bold">Stripe</span>
-                                et gestion des données sur <span class="text-bold">PostgreSQL</span>.
-                            </p>
-                            <div class="btn">
-                                <a href="https://social-erp.vercel.app/" target="_blank" class="btnProjet"
-                                    rel="noopener noreferrer">Project</a>
-                                <a href="https://github.com/Boubacarkonate/socialErp.git" target="_blank"
-                                    class="btnProjet" rel="noopener noreferrer">Code</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="public/media/projects/taskMaster.png" class="card-img-top projects"
-                            alt="Capture d'écran du Projet To-Do List" loading="lazy">
-                        <div class="card-body">
-                            <h3 class="card-title">TaskMaster</h3>
-                            <p class="card-text project-taskMaster-description">
-                                Une application de gestion des tâches réalisée avec <span
-                                    class="text-bold">Next.js</span>, l'ORM
-                                <span class="text-bold">Prisma</span>, et une base de données <span
-                                    class="text-bold">MySQL</span>.
-                                Le design moderne est conçu avec <span class="text-bold">Tailwind CSS</span>, et des
-                                <span class="text-bold">routes API</span> performantes
-                                assurent une gestion efficace des tâches : création, lecture, mise à jour et
-                                suppression.
-                            </p>
-                            <div class="btn">
-                                <a href="https://mytodo-app-blush.vercel.app/" target="_blank" class="btnProjet"
-                                    style="pointer-events: none; cursor: default; filter: grayscale(80%);">Project</a>
-                                <a href="https://github.com/Boubacarkonate/liste-de-taches.git" target="_blank"
-                                    class="btnProjet" rel="noopener noreferrer">Code</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- <div class="card">
-                        <img src="public/media/projects/travel.jpg" class="card-img-top projects"
-                            alt="Capture d'écran du projet Travel Blog" loading="lazy">
-                        <div class="card-body">
-                            <h3 class="card-title">The Travel Blog</h3>
-                            <p class="card-text project-travelBlog-description">
-                                Blog de voyage développé en <span class="text-bold">React</span> avec <span
-                                    class="text-bold">TypeScript</span>, qui
-                                assure une meilleure gestion des
-                                types et améliore la maintenabilité du code, et
-                                <span class="text-bold">Tailwind CSS</span> pour une interface moderne. L'application
-                                consomme une <span class="text-bold">API</span> externe pour afficher dynamiquement des
-                                articles de voyage.
-                            </p>
-                            <div class="btn">
-                                <a href="https://exemple-blog.vercel.app/" target="_blank" class="btnProjet"
-                                    rel="noopener noreferrer">Project</a>
-                                <a href="https://github.com/Boubacarkonate/exempleBlog.git" target="_blank"
-                                    class="btnProjet" rel="noopener noreferrer">Code</a>
-                            </div>
-                        </div>
-                    </div> -->
-
-
-                    <div class="card">
-                        <img src="public/media/projects/weCare.png" class="card-img-top projects"
-                            alt="Capture d'écran du Projet WeCare" loading="lazy">
-                        <div class="card-body">
-                            <h3 class="card-title">WeCare</h3>
-                            <p class="card-text project-weCare-description">
-                                Application mobile facilitant la communication entre les institutions médico-sociales et
-                                les familles,
-                                développée en <span class="text-bold">React Native, JavaScript, CSS</span> et <span
-                                    class="text-bold">Firebase</span>.
-                                Cette application intègre le pattern <span class="text-bold">MVVM</span> et offre des
-                                fonctionnalités comme un système d'échange sécurisé de messages.
-                            </p>
-                            <div class="btn">
-                                <a href="#" target="_blank" class="btnProjet"
-                                    style="pointer-events: none; cursor: default; filter: grayscale(80%);"
-                                    rel="noopener noreferrer">Project</a>
-                                <a href="https://github.com/Boubacarkonate/weCare-project.git" target="_blank"
-                                    class="btnProjet" rel="noopener noreferrer">Code</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="public/media/projects/etalent.png" class="card-img-top projects"
-                            alt="Capture d'écran du Projet e-talent" loading="lazy">
-                        <div class="card-body">
-                            <h3 class="card-title">E-talentSocial</h3>
-                            <p class="card-text project-etalent-description">
-                                Développé en <span class="text-bold">PHP</span> avec le framework <span
-                                    class="text-bold">Symfony</span>
-                                et la base de données <span class="text-bold">MySQL</span>, ce site e-commerce adopte le
-                                pattern
-                                <span class="text-bold">Model-View-Controller</span> pour garantir une architecture
-                                claire et maintenable.
-                                L'intégration de l'<span class="text-bold">API Stripe</span> permet de souscrire à
-                                divers abonnements en ligne.
-                            </p>
-                            <div class="btn">
-                                <a href="maintenance.html" target="_blank" class="btnProjet"
-                                    rel="noopener noreferrer">Project</a>
-                                <a href="https://github.com/Boubacarkonate/etalentsocial.git" target="_blank"
-                                    class="btnProjet" rel="noopener noreferrer">Code</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="card">
-                        <img src="public/media/projects/javascript.jpg" class="card-img-top projects"
-                            alt="Capture d'écran de minis projets en javascript" loading="lazy">
-                        <div class="card-body">
-                            <h3 class="card-title">Mini projets en Javascript</h3>
-                            <p class="card-text project-projetJs-description">
-                                Projet regroupant une collection de petites fonctionnalités interactives développées en
-                                <span class="text-bold">HTML, CSS</span> et <span class="text-bold">JavaScript</span>
-                                pur, telles qu’une calculatrice, un convertisseur
-                                de devises, un gestionnaire de notes, ou encore des jeux simples comme
-                                Pierre-Papier-Ciseaux. Ces projets explorent des concepts clés en <span
-                                    class="text-bold">JS</span>.
-                            </p>
-                            <div class="btn">
-                                <a href="https://boubacarkonate.github.io/miniProjet-algo/" target="_blank"
-                                    class="btnProjet" rel="noopener noreferrer">Project</a>
-                                <a href="https://github.com/Boubacarkonate/miniProjet-algo.git" target="_blank"
-                                    class="btnProjet" rel="noopener noreferrer">Code</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="card">
-                        <img src="public/media/projects/adei.jpg" class="card-img-top projects"
-                            alt="Capture d'écran du projet wecare" loading="lazy">
-                        <div class="card-body">
-                            <h3 class="card-title">Adei-france</h3>
-                            <p class="card-text project-adei-description">
-                                Projet dédié à la fourniture de services de solutions informatiques durables et
-                                responsables. Initialement développé avec le framework <span
-                                    class="text-bold">Symfony</span>, le site a ensuite fait l'objet d'une refonte
-                                complète en <span class="text-bold">WordPress</span> pour permettre une gestion plus
-                                flexible du contenu et une meilleure accessibilité.
-                            </p>
-                            <div class="btn">
-                                <a href="https://adei-france.fr/" target="_blank" class="btnProjet"
-                                    rel="noopener noreferrer">Project</a>
-                                <a href="#" target="_blank" class="btnProjet"
-                                    style="pointer-events: none; cursor: default; filter: grayscale(80%);"
-                                    rel="noopener noreferrer">Code</a>
-                            </div>
-                        </div>
-                    </div> -->
-
-                    <div class="card">
-                        <img src="public/media/projects/flashnet75.png" class="card-img-top projects"
-                            alt="Capture d'écran du Projet Flasnet75" loading="lazy">
-                        <div class="card-body">
-                            <h3 class="card-title">FlashNet75</h3>
-                            <p class="card-text project-flashnet75-description">
-                                Site vitrine professionnel développé avec <span class="text-bold">WordPress</span>,
-                                conçu pour promouvoir
-                                les services de nettoyage auprès des particuliers et des entreprises.
-                                Une personnalisation avancée a été réalisée avec <span class="text-bold">HTML</span> et
-                                <span class="text-bold">CSS</span>,
-                                permettant de créer un design adapté à l'identité de l'entreprise.
-                            </p>
-                            <div class="btn">
-                                <a href="https://flashnet75.fr/" target="_blank" class="btnProjet"
-                                    rel="noopener noreferrer">Project</a>
-                                <a href="https://github.com/Boubacarkonate/flashNet75.git" target="_blank"
-                                    class="btnProjet" rel="noopener noreferrer">Code</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="card">
-                        <img src="public/media/projects/toDoList.png" class="card-img-top projects" alt="Capture d'écran du projet adei" loading="lazy">
-                        <div class="card-body">
-                            <h3 class="card-title">ToDoList</h3>
-                            <p class="card-text project-todolist-description">
-                                Application web responsive de gestion de tâches, développée avec le framework <span
-                                    class="text-bold">React</span> et le framework CSS <span
-                                    class="text-bold">Bootstrap</span> et la base de données. Cette
-                                application permet aux
-                                utilisateurs de
-                                créer, organiser et suivre leurs tâches de manière intuitive, avec une interface moderne
-                                et réactive.
-                            </p>
-
-                            <div class="btn">
-                                <a href="https://boubacarkonate.github.io/toDoList/" target="_blank"
-                                    class="btnProjet" rel="noopener noreferrer">Project</a>
-                                <a href="https://github.com/Boubacarkonate/toDoList.git" target="_blank"
-                                    class="btnProjet" rel="noopener noreferrer">Code</a>
-                            </div>
-                        </div>
-                    </div> -->
-
-                    <!-- <div class="card">
-                        <img src="public/media/projects/talentMatch.png" class="card-img-top projects"
-                            alt="Capture d'écran du projet wecare" loading="lazy">
-                        <div class="card-body">
-                            <h3 class="card-title">Talent Match</h3>
-                            <p class="card-text project-talentMatch-description">
-                                Cette application web aide à identifier les talents du digital via un questionnaire
-                                détaillé. Développée avec le framework <span class="text-bold">React</span>, elle
-                                intègre l'<span class="text-bold">API REST</span> "apiTalentMatch" pour une recherche
-                                avancée et précise des candidats. Grâce à la gestion d'états et à l'utilisation du
-                                provider <span class="text-bold">useContext</span>.
-                            </p>
-                            <div class="btn">
-                                <a href="https://talent-match-one.vercel.app/" target="_blank"
-                                    class="btnProjet" rel="noopener noreferrer">Project</a>
-                                <a href="https://github.com/Boubacarkonate/talentMatch.git" target="_blank"
-                                    class="btnProjet" rel="noopener noreferrer">Code</a>
-                            </div>
-                        </div>
-                    </div> -->
-
-                    <!-- <div class="card">
-                        <img src="public/media/projects/apiRest.png" class="card-img-top projects" alt="Capture d'écran du projet apiRest" loading="lazy">
-                        <div class="card-body">
-                            <h3 class="card-title">API REST</h3>
-                            <p class="card-text project-apiRest-description">
-                                API REST développée en<span class="text-bold"> Node.js et Express.js</span>, conçue pour
-                                le bon fonctionnement de l'application <span class="text-bold">Talent Match</span>.
-                                Cette API répond à des requêtes GET pour
-                                gèrer les profils des professionnels digitaux ainsi que les données du questionnaire
-                                utilisé pour la recherche de talents.
-                            </p>
-                            <div class="btn">
-                                <a href="https://api-rest.up.railway.app/" target="_blank" class="btnProjet" rel="noopener noreferrer">Project</a>
-                                <a href="https://github.com/Boubacarkonate/apiRestTalentMatch.git" target="_blank"
-                                    class="btnProjet" rel="noopener noreferrer">Code</a>
-                            </div>
-                        </div>
-                    </div> -->
-                </div>
-                <!-- <div class="btnProjet">
-                    <a href="./projets.html" class="btnProjet">Autres projets</a>
-                </div> -->
-            </section>
+        <div class="skill-card reveal">
+          <div class="skill-card-icon"><i class="fa-solid fa-wrench" aria-hidden="true"></i></div>
+          <h3 class="skills-others">Outils</h3>
+          <ul>
+            <li><img src="public/media/icons/icons8-github-16.svg" alt="" loading="lazy"><span>GitHub</span></li>
+            <li><img src="public/media/icons/icons8-merise-16.png" alt="" loading="lazy"><span>Merise</span></li>
+            <li><img src="public/media/icons/icons8-uml-16.png" alt="" loading="lazy"><span>UML</span></li>
+          </ul>
         </div>
+      </div>
+    </section>
 
-        <div data-aos="zoom-in-up" data-aos-duration="2000" id="formations">
-            <section>
-                <h2 id="formations-title">Formations et curriculum vitae</h2>
-                <div class="formations">
-                    <div class="certifications">
-                        <p><span class="badge">2024 : Titre de Concepteur Développeur d'Applications</span></p>
-                        <p><span class="badge">2023 : Titre de Développeur Web et Web Mobile</span></p>
-                        <p><span class="badge">2022 : Openclassrooms (HTML / CSS / JS / PHP)</span></p>
-                    </div>
-                    <div class="cv">
-                        <a href="public/media/cv.pdf" class="btnProjet" target="_blank" id="cv-download"
-                            rel="noopener noreferrer" aria-label="Télécharger le CV au format PDF">CV
-                            à
-                            télécharger</a>
-                    </div>
-                </div>
-            </section>
+    <!-- PROJECTS -->
+    <section id="projets" class="section">
+      <div class="section-label reveal" data-key="section-projects">— Projets</div>
+      <h2 class="section-title reveal" id="projects-title">Quelques projets réalisés</h2>
+      <div class="projects-grid">
+
+        <article class="project-card reveal">
+          <div class="project-img-wrap">
+            <img src="public/media/projects/socialErp.png" alt="Social ERP" loading="lazy">
+            <div class="project-overlay">
+              <a href="https://social-erp.vercel.app/" target="_blank" rel="noopener noreferrer" class="overlay-btn"
+                data-i18n="project-btn" data-project="erpSocial"><span class="btn-label">Voir le projet</span> <i
+                  class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="https://github.com/Boubacarkonate/socialErp.git" target="_blank" rel="noopener noreferrer"
+                class="overlay-btn">Code <i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Social ERP</h3>
+            <p class="project-erpSocial-description">Application de gestion d'équipes et produits en Next.js &
+              TypeScript, avec Tailwind CSS, Clerk, Stripe et PostgreSQL.</p>
+            <div class="project-tags">
+              <span>Next.js</span><span>TypeScript</span><span>Stripe</span><span>PostgreSQL</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-img-wrap">
+            <img src="public/media/projects/taskMaster.png" alt="TaskMaster" loading="lazy">
+            <div class="project-overlay">
+              <a href="https://mytodo-app-blush.vercel.app/" target="_blank" rel="noopener noreferrer"
+                class="overlay-btn" data-i18n="project-btn" data-project="taskMaster"><span class="btn-label">Voir le
+                  projet</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="https://github.com/Boubacarkonate/liste-de-taches.git" target="_blank" rel="noopener noreferrer"
+                class="overlay-btn">Code <i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>TaskMaster</h3>
+            <p class="project-taskMaster-description">Application de gestion de tâches avec Next.js, Prisma ORM, MySQL
+              et Tailwind CSS — CRUD complet via routes API.</p>
+            <div class="project-tags">
+              <span>Next.js</span><span>Prisma</span><span>MySQL</span><span>Tailwind</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-img-wrap">
+            <img src="public/media/projects/weCare.png" alt="WeCare" loading="lazy">
+            <div class="project-overlay">
+              <a class="overlay-btn" style="opacity:0.5;pointer-events:none" data-i18n="project-btn"
+                data-project="weCare" aria-disabled="true"><span class="btn-label">Voir le projet</span></a>
+              <a href="https://github.com/Boubacarkonate/weCare-project.git" target="_blank" rel="noopener noreferrer"
+                class="overlay-btn">Code <i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>WeCare</h3>
+            <p class="project-weCare-description">Application mobile facilitant la communication entre institutions
+              médico-sociales et familles. React Native, Firebase, pattern MVVM.</p>
+            <div class="project-tags">
+              <span>React Native</span><span>Firebase</span><span>MVVM</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-img-wrap">
+            <img src="public/media/projects/etalent.png" alt="E-talentSocial" loading="lazy">
+            <div class="project-overlay">
+              <a href="maintenance.html" target="_blank" rel="noopener noreferrer" class="overlay-btn"
+                data-i18n="project-btn" data-project="etalent"><span class="btn-label">Voir le projet</span> <i
+                  class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="https://github.com/Boubacarkonate/etalentsocial.git" target="_blank" rel="noopener noreferrer"
+                class="overlay-btn">Code <i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>E-talentSocial</h3>
+            <p class="project-etalent-description">Site e-commerce Symfony/PHP avec MySQL, architecture MVC et
+              intégration Stripe pour la gestion d'abonnements.</p>
+            <div class="project-tags">
+              <span>PHP</span><span>Symfony</span><span>MySQL</span><span>Stripe</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-img-wrap">
+            <img src="public/media/projects/flashnet75.png" alt="FlashNet75" loading="lazy">
+            <div class="project-overlay">
+              <a href="https://flashnet75.fr/" target="_blank" rel="noopener noreferrer" class="overlay-btn"
+                data-i18n="project-btn" data-project="flashnet75"><span class="btn-label">Voir le projet</span> <i
+                  class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="https://github.com/Boubacarkonate/flashNet75.git" target="_blank" rel="noopener noreferrer"
+                class="overlay-btn">Code <i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>FlashNet75</h3>
+            <p class="project-flashnet75-description">Site vitrine WordPress pour une entreprise de nettoyage, avec
+              personnalisation avancée HTML/CSS et design sur mesure.</p>
+            <div class="project-tags">
+              <span>WordPress</span><span>HTML/CSS</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-img-wrap">
+            <img src="public/media/projects/javascript.jpg" alt="Mini projets JavaScript" loading="lazy">
+            <div class="project-overlay">
+              <a href="https://boubacarkonate.github.io/miniProjet-algo/" target="_blank" rel="noopener noreferrer"
+                class="overlay-btn" data-i18n="project-btn" data-project="projetJs"><span class="btn-label">Voir le
+                  projet</span> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="https://github.com/Boubacarkonate/miniProjet-algo.git" target="_blank" rel="noopener noreferrer"
+                class="overlay-btn">Code <i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Mini projets JS</h3>
+            <p class="project-projetJs-description">Collection de fonctionnalités interactives en HTML/CSS/JS pur :
+              calculatrice, convertisseur de devises, gestionnaire de notes, jeux.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- FORMATIONS -->
+    <section id="formations" class="section">
+      <div class="section-label reveal" data-key="section-formations">— Parcours</div>
+      <h2 class="section-title reveal" id="formations-title">Formations & Curriculum Vitae</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2024</span>
+            <h3>Concepteur Développeur d'Applications</h3>
+            <p>Titre professionnel niveau 6 (Bac+3/4)</p>
+          </div>
         </div>
-    </main>
-
-    <footer>
-        <div data-aos="zoom-in-up" data-aos-duration="2000" id="contact">
-            <section>
-                <h2>Contact</h2>
-                <p id="contact-description">Retrouvez-moi sur mes réseaux sociaux ou envoyez-moi un email.</p>
-                <ul>
-                    <li>
-                        <a href="https://github.com/Boubacarkonate" target="blank" rel="noopener noreferrer"><i
-                                class="fa-brands fa-github"
-                                aria-label="Visiter mon profil GitHub, ouvre une nouvelle fenêtre"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/boubacar-konaté-a87531261" target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="Visiter mon profil LinkedIn, ouvre une nouvelle fenêtre"><i
-                                class="fa-brands fa-linkedin"></i></a>
-                    </li>
-                    <li>
-                        <a href="mailto:boubacar.konate@outlook.fr" target="_blank" rel="noopener noreferrer"
-                            aria-label="Pour me contacter par mail, ouvre une nouvelle fenêtre">boubacar.konate@outlook.fr</a>
-                    </li>
-                </ul>
-            </section>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2023</span>
+            <h3>Développeur Web et Web Mobile</h3>
+            <p>Titre professionnel niveau 5 (Bac+2)</p>
+          </div>
         </div>
-    </footer>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2022</span>
+            <h3>Openclassrooms</h3>
+            <p>HTML / CSS / JavaScript / PHP — Initiation au développement web</p>
+          </div>
+        </div>
+      </div>
+      <div class="cv-cta reveal">
+        <a href="public/media/cv.pdf" target="_blank" rel="noopener noreferrer" class="btn-primary" id="cv-download">
+          <i class="fa-solid fa-file-arrow-down"></i> Télécharger mon CV
+        </a>
+      </div>
+    </section>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            once: true  // Animation se produit une seule fois
-        });
-    </script>
-    <script src="public/js/index.js"></script>
+  </main>
+
+  <!-- FOOTER / CONTACT -->
+  <footer id="contact">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <h2 class="footer-title">Contact</h2>
+        <p class="footer-desc" id="contact-description">Retrouvez-moi sur mes réseaux ou envoyez-moi un email.</p>
+        <a href="mailto:boubacar.konate@outlook.fr" class="footer-email">boubacar.konate@outlook.fr</a>
+      </div>
+      <div class="footer-socials">
+        <a href="https://github.com/Boubacarkonate" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+            class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/boubacar-konaté-a87531261" target="_blank" rel="noopener noreferrer"
+          aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:boubacar.konate@outlook.fr" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Boubacar Konaté</span>
+      <span>Développeur Full Stack</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
