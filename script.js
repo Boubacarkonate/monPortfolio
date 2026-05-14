@@ -224,11 +224,11 @@ const navKeyMap = {
   const projects = data.projects || {};
   const projectMap = {
     'project-erpSocial-description':  projects.erpSocial?.description,
-    'project-taskMaster-description': projects.taskMaster?.description,
+    'project-ccsforge-description': projects.ccsforge?.description,
     'project-weCare-description':     projects.weCare?.description,
     'project-etalent-description':    projects.etalent?.description,
     'project-flashnet75-description': projects.flashnet75?.description,
-    'project-projetJs-description':   projects.projetJs?.description,
+    'project-heritage-description':   projects.heritage?.description,
   };
 
   Object.entries(projectMap).forEach(([cls, val]) => {

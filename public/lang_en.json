@@ -70,6 +70,12 @@
             "description": "ERP Social is a test application for team and product management. It is built with Next.js and TypeScript, featuring a modern interface designed with Tailwind CSS. Authentication is handled via Clerk, online payments are processed with Stripe, and data management is powered by PostgreSQL.",
             "urlFr": "https://social-erp.vercel.app/",
             "urlEn": "https://social-erp.vercel.app/"
+        },
+        "ccsforge": {
+            "description": "CSS styles generator in HTML, CSS and JS. Allows you to easily create and manage CSS styles for web projects. Integrated payment for premium features."
+        },
+        "heritage": {
+            "description": "Presentation website for a service company with advanced customization in HTML, CSS and JavaScript."
         }
 
 
