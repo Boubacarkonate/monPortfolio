@@ -199,6 +199,10 @@ const navKeyMap = {
     'competences-title':  data.competences?.title,
     'projects-title':     data.projects?.title,
     'formations-title':   data.formations?.title,
+    'formation-2023-level': data.formations?.['level-2023'],
+    'formation-2022-desc': data.formations?.['desc-2022'],
+    'formation-2005-title': data.formations?.['title-2005'],
+    'formation-2005-desc': data.formations?.['desc-2005'],
     'cv-download':        data.formations?.cv,
     'contact-description':data.contact?.description,
   };

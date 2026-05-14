@@ -13,8 +13,7 @@
     "header": {
         "title": "Boubacar Konaté",
         "subtitle": "Développeur web",
-        "description": "Après une carrière enrichissante dans le travail social, j'ai choisi d'orienter mes compétences au service du développement web et mobile. Animé par le désir d’aider les autres, j'ai comme volonté de concevoir des solutions technologiques modernes et accessibles. Mes soft skills, tels que l'écoute, la curiosité, la résolution de problèmes et la collaboration, me permettent de créer des applications orientées utilisateur, combinant technologie et impact social.",
-        "cta": "Voir mes projets",
+        "description": "Après une carrière enrichissante dans le travail social, j'ai choisi d'orienter mes compétences au service du développement web et mobile. Animé par le désir d’aider les autres, j'ai comme volonté de concevoir des solutions technologiques modernes et accessibles. Mes soft skills, tels que l'écoute, la curiosité, la résolution de problèmes et la collaboration, me permettent de créer des applications orientées utilisateur, combinant technologie et impact social.",        "available": "Disponible pour de nouvelles opportunités",        "cta": "Voir mes projets",
         "cv": "CV à télécharger"
     },
     "competences": {
@@ -73,10 +72,15 @@
     },
     "formations": {
         "title": "Formations et curriculum vitae",
+        "level-2023": "Titre professionnel niveau 5 (Bac+2)",
+        "desc-2022": "HTML / CSS / JavaScript / PHP — Initiation au développement web",
+        "title-2005": "BTS Informatique de Gestion option Développeur d'Applications",
+        "desc-2005": "Diplôme d'État de niveau 5 (Bac+2)",
         "certifications": [
             "2024 : Titre de Concepteur Développeur d'Applications",
             "2023 : Titre de Développeur Web et Web Mobile",
-            "2022 : Openclassrooms (HTML / PHP / JS)"
+            "2022 : Openclassrooms (HTML / PHP / JS)",
+            "2005 : Diplôme d'État de niveau 5 (Bac+2)"
         ],
         "cv": "CV à télécharger"
     },

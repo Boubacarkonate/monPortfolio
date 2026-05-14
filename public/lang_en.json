@@ -14,6 +14,7 @@
         "title": "Boubacar Konaté",
         "subtitle": "Web Developer",
         "description": "After a fulfilling career in social work, I chose to redirect my skills toward web and mobile development. Driven by a desire to help others, I aim to design modern and accessible technological solutions. My soft skills, such as listening, curiosity, problem-solving, and collaboration, enable me to create user-focused applications that combine technology with social impact.",
+        "available": "Available for new opportunities",
         "cta": "View My Projects",
         "cv": "Download CV"
     },
@@ -75,10 +76,15 @@
     },
     "formations": {
         "title": "Education and Curriculum Vitae",
+        "level-2023": "Professional certification level 5 (Bac+2)",
+        "desc-2022": "HTML / CSS / JavaScript / PHP — Introduction to web development",
+        "title-2005": "BTS Information Technology - Application Developer",
+        "desc-2005": "State Diploma level 5 (Bac+2)",
         "certifications": [
             "2024: Application Designer and Developer Certification",
             "2023: Web and Mobile Developer Certification",
-            "2022: Openclassrooms (HTML / PHP / JS)"
+            "2022: Openclassrooms (HTML / PHP / JS)",
+            "2005: BTS Information Technology - Application Developer"
         ],
         "cv": "Download CV"
     },
