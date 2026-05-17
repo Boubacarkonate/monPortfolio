@@ -53,10 +53,10 @@
         "adei": {
             "description": "Project focused on providing sustainable and responsible IT solutions. Initially built with the Symfony framework, the site was later entirely redesigned in WordPress for more flexible content management and better accessibility."
         },
-        "flashnet75": {
+        "coreham": {
             "description": "A business showcase website developed with WordPress, designed to promote cleaning services for both individuals and companies. Advanced customization was done with HTML and CSS, creating a design tailored to the company's identity.",
-            "urlFr": "https://flashnet75.fr/",
-            "urlEn": "https://flashnet75.fr/"
+            "urlFr": "https://coreham.fr/",
+            "urlEn": "https://coreham.fr/"
         },
         "weCare": {
             "description": "A mobile application facilitating communication between healthcare and social institutions and families, developed with React Native and Firebase. This application integrates the MVVM pattern and offers features such as a secure messaging system."

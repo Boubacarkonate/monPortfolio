@@ -227,7 +227,7 @@ const navKeyMap = {
     'project-ccsforge-description': projects.ccsforge?.description,
     'project-weCare-description':     projects.weCare?.description,
     'project-etalent-description':    projects.etalent?.description,
-    'project-flashnet75-description': projects.flashnet75?.description,
+    'project-coreham-description': projects.coreham?.description,
     'project-heritage-description':   projects.heritage?.description,
   };
 
