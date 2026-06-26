@@ -229,6 +229,7 @@ const navKeyMap = {
     'project-etalent-description':    projects.etalent?.description,
     'project-coreham-description': projects.coreham?.description,
     'project-heritage-description':   projects.heritage?.description,
+    'project-thetravelblog-description': projects.thetravelblog?.description,
   };
 
   Object.entries(projectMap).forEach(([cls, val]) => {

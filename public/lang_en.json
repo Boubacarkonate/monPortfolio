@@ -36,8 +36,8 @@
         "todolist": {
             "description": "Responsive web application for task management, developed using the React framework, Bootstrap CSS framework, and PostgreSQL database. This application enables users to create, organize, and track their tasks in an intuitive manner, featuring a modern and dynamic interface that adapts seamlessly to different devices."
         },
-        "travelBlog": {
-            "description": "Travel blog developed in React with TypeScript, ensuring better type management and improved code maintainability, and Tailwind CSS for a modern interface. The application consumes an external API to dynamically display travel articles."
+        "thetravelblog": {
+            "description": "Travel blog built with React & TypeScript, Vite, and Tailwind CSS. Bilingual FR/EN, dark mode, PWA, parallax scrolling, interactive photo gallery, and a real-time comment and like system powered by Firebase Firestore."
         },
         "talentMatch": {
             "description": "This web application helps identify digital talents through a detailed questionnaire. Developed with the React framework, it integrates the 'apiTalentMatch' REST API for advanced and precise candidate searches. State management and the useContext provider are utilized effectively."
