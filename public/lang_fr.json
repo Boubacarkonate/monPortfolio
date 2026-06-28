@@ -65,7 +65,7 @@
             "urlEn": "https://boubacarkonate.github.io/miniProjet-algo/"
         },
         "erpSocial": {
-            "description": "ERP social est une application test pour la gestion des équipes et des produits. Elle est crée en Next.js et TypeScript, avec Tailwind CSS pour une interface moderne. L'authentification est assurée via Clerk. Les paiements en ligne sont effectués avec Stripe et gestion des données sur PostgreSQL.",
+            "description": "Application ERP fullstack avec tableau de bord temps réel, catalogue produits filtrable par catégorie, carrousel d'images, paiement Stripe, planning collaboratif, mode clair/sombre, export CSV et assistant virtuel intégré.",
             "urlFr": "https://social-erp.vercel.app/",
             "urlEn": "https://social-erp.vercel.app/"
         },
