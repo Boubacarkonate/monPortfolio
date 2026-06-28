@@ -50,15 +50,34 @@
     </div>
   </nav>
 
-  <!-- MOBILE MENU -->
-  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
-    <ul>
-      <li><a href="#competences" data-key="nav-skills">Compétences</a></li>
-      <li><a href="#projets" data-key="nav-projects">Projets</a></li>
-      <li><a href="#formations" data-key="nav-education">Formations</a></li>
-      <li><a href="#contact" data-key="nav-contact">Contact</a></li>
-    </ul>
-  </div>
+  <!-- DRAWER OVERLAY -->
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+
+  <!-- DRAWER -->
+  <aside class="drawer" id="drawer" role="dialog" aria-label="Menu navigation" aria-hidden="true" aria-modal="true">
+    <div class="drawer-header">
+      <span class="drawer-logo"><span class="logo-bracket">{</span>BK<span class="logo-bracket">}</span></span>
+      <button class="drawer-close" id="drawer-close" aria-label="Fermer le menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <nav class="drawer-nav">
+      <ul>
+        <li><a href="#competences" data-key="nav-skills"><span class="drawer-num">01</span>Compétences</a></li>
+        <li><a href="#projets" data-key="nav-projects"><span class="drawer-num">02</span>Projets</a></li>
+        <li><a href="#formations" data-key="nav-education"><span class="drawer-num">03</span>Formations</a></li>
+        <li><a href="#contact" data-key="nav-contact"><span class="drawer-num">04</span>Contact</a></li>
+      </ul>
+    </nav>
+    <div class="drawer-footer">
+      <div class="drawer-socials">
+        <a href="https://github.com/Boubacarkonate" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/boubacar-konaté-a87531261" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:boubacar.konate@outlook.fr" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <p class="drawer-copy">© <span id="drawer-year"></span> Boubacar Konaté</p>
+    </div>
+  </aside>
 
   <!-- HERO -->
   <header class="hero" id="hero">
@@ -170,29 +189,13 @@
           </div>
           <div class="project-body">
             <h3>Social ERP</h3>
-            <p class="project-erpSocial-description">Application de gestion d'équipes et produits en Next.js &
-              TypeScript, avec Tailwind CSS, Clerk, Stripe et PostgreSQL.</p>
+            <p class="project-erpSocial-description">Application ERP fullstack avec tableau de bord temps réel,
+              catalogue produits filtrable par catégorie, carrousel d'images, paiement Stripe, planning collaboratif,
+              mode clair/sombre, export CSV et assistant virtuel intégré.</p>
             <div class="project-tags">
-              <span>Next.js</span><span>TypeScript</span><span>Stripe</span><span>PostgreSQL</span>
-            </div>
-          </div>
-        </article>
-        <article class="project-card reveal">
-          <div class="project-img-wrap">
-            <img src="public/media/projects/ccsforge.png" alt="image de l'application CCS Forge" loading="lazy">
-            <div class="project-overlay">
-              <a href="https://cssforge-gilt.vercel.app/" target="_blank" rel="noopener noreferrer"
-                class="overlay-btn" data-i18n="project-btn" data-project="ccsforge"><span class="btn-label">Voir le
-                  projet</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-              <a href="#" target="_blank" rel="noopener noreferrer" style="opacity:0.5;pointer-events:none" 
-                class="overlay-btn">Code <i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-          <div class="project-body">
-            <h3>CCS Forge</h3>
-            <p class="project-ccsforge-description">Générateur de styles CSS en HTML, CSS et JS. Permet de créer et de gérer facilement des styles CSS pour les projets web. Paiement intégré pour les fonctionnalités premium.</p>
-            <div class="project-tags">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Lemon Squeezy</span>
+              <span>Next.js
+                15</span><span>TypeScript</span><span>Prisma</span><span>PostgreSQL</span><span>Stripe</span><span>Clerk</span><span>Tailwind
+                CSS</span>
             </div>
           </div>
         </article>
@@ -221,6 +224,47 @@
         </article>
         <article class="project-card reveal">
           <div class="project-img-wrap">
+            <img src="public/media/projects/ccsforge.png" alt="image de l'application CCS Forge" loading="lazy">
+            <div class="project-overlay">
+              <a href="https://cssforge-gilt.vercel.app/" target="_blank" rel="noopener noreferrer" class="overlay-btn"
+                data-i18n="project-btn" data-project="ccsforge"><span class="btn-label">Voir le
+                  projet</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" target="_blank" rel="noopener noreferrer" style="opacity:0.5;pointer-events:none"
+                class="overlay-btn">Code <i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>CCS Forge</h3>
+            <p class="project-ccsforge-description">Générateur de styles CSS en HTML, CSS et JS. Permet de créer et de
+              gérer facilement des styles CSS pour les projets web. Paiement intégré pour les fonctionnalités premium.
+            </p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Lemon Squeezy</span>
+            </div>
+          </div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-img-wrap">
+            <img src="public/media/projects/heritage.png" alt="image du site web Heritage" loading="lazy">
+            <div class="project-overlay">
+              <a href="https://heritage-ebon.vercel.app/" target="_blank" rel="noopener noreferrer" class="overlay-btn"
+                data-i18n="project-btn" data-project="heritage"><span class="btn-label">Voir le
+                  projet</span> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" target="_blank" rel="noopener noreferrer" style="opacity:0.5;pointer-events:none"
+                class="overlay-btn">Code <i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Heritage</h3>
+            <p class="project-heritage-description">Site web de présentation pour une entreprise artisanale de
+              prestation de services avec personnalisation avancée en HTML, CSS et JavaScript.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-img-wrap">
             <img src="public/media/projects/etalent.png" alt="image de l'application E-talentSocial" loading="lazy">
             <div class="project-overlay">
               <a href="maintenance.html" target="_blank" rel="noopener noreferrer" class="overlay-btn"
@@ -239,7 +283,6 @@
             </div>
           </div>
         </article>
-
         <article class="project-card reveal">
           <div class="project-img-wrap">
             <img src="public/media/projects/flashnet75.png" alt="image du site web Coreham" loading="lazy">
@@ -257,26 +300,6 @@
               personnalisation avancée HTML/CSS et design sur mesure.</p>
             <div class="project-tags">
               <span>WordPress</span><span>HTML/CSS</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card reveal">
-          <div class="project-img-wrap">
-            <img src="public/media/projects/heritage.png" alt="image du site web Heritage" loading="lazy">
-            <div class="project-overlay">
-              <a href="https://heritage-ebon.vercel.app/" target="_blank" rel="noopener noreferrer"
-                class="overlay-btn" data-i18n="project-btn" data-project="heritage"><span class="btn-label">Voir le
-                  projet</span> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                  <a href="#" target="_blank" rel="noopener noreferrer" style="opacity:0.5;pointer-events:none" 
-                class="overlay-btn">Code <i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-          <div class="project-body">
-            <h3>Heritage</h3>
-            <p class="project-heritage-description">Site web de présentation pour une entreprise artisanale de prestation de services avec personnalisation avancée en HTML, CSS et JavaScript.</p>
-            <div class="project-tags">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span>
             </div>
           </div>
         </article>
@@ -327,7 +350,6 @@
         </a>
       </div>
     </section>
-
   </main>
 
   <!-- FOOTER / CONTACT -->
@@ -351,8 +373,6 @@
       <span>Développeur Full Stack</span>
     </div>
   </footer>
-
   <script src="script.js"></script>
 </body>
-
 </html>

@@ -8,25 +8,47 @@ window.addEventListener('scroll', () => {
   lastScroll = current;
 }, { passive: true });
 
-// BURGER MENU
+// DRAWER MENU
 const burger = document.getElementById('burger');
-const mobileMenu = document.getElementById('mobile-menu');
+const drawer = document.getElementById('drawer');
+const drawerOverlay = document.getElementById('drawer-overlay');
+const drawerClose = document.getElementById('drawer-close');
+const drawerYear = document.getElementById('drawer-year');
+if (drawerYear) drawerYear.textContent = new Date().getFullYear();
+
+function openMenu() {
+  burger.classList.add('open');
+  drawer.classList.add('open');
+  drawerOverlay.classList.add('open');
+  burger.setAttribute('aria-expanded', 'true');
+  drawer.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+  drawerClose.focus();
+}
+
+function closeMenu() {
+  burger.classList.remove('open');
+  drawer.classList.remove('open');
+  drawerOverlay.classList.remove('open');
+  burger.setAttribute('aria-expanded', 'false');
+  drawer.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+  burger.focus();
+}
 
 burger.addEventListener('click', () => {
-  const isOpen = burger.classList.toggle('open');
-  mobileMenu.classList.toggle('open', isOpen);
-  burger.setAttribute('aria-expanded', isOpen);
-  mobileMenu.setAttribute('aria-hidden', !isOpen);
+  burger.classList.contains('open') ? closeMenu() : openMenu();
 });
 
-// Close mobile menu on link click
-mobileMenu.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    burger.classList.remove('open');
-    mobileMenu.classList.remove('open');
-    burger.setAttribute('aria-expanded', 'false');
-    mobileMenu.setAttribute('aria-hidden', 'true');
-  });
+drawerClose.addEventListener('click', closeMenu);
+drawerOverlay.addEventListener('click', closeMenu);
+
+drawer.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', closeMenu);
+});
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && burger.classList.contains('open')) closeMenu();
 });
 
 // SCROLL REVEAL
